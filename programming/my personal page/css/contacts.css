@@ -1,0 +1,19 @@
+.phoneBlock, .emailBlock {
+    display: none;
+    position: absolute;
+    
+    width: 270px;
+    height: 40px;
+    top: 76px;
+    right: 3px;
+    padding: 5px;
+
+    border-radius: 15px;
+    background: rgba(53, 69, 57, 0.76);
+    color: rgba(255, 255, 255, 0.81);
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+

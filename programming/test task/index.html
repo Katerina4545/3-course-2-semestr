@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./index.css">
+    <title>katerinaTask.com</title>
+</head>
+<body>
+
+    
+    <div class="myBlock">
+        <div class="name">Target Indicator Demo</div>
+        <div class="information">
+            
+                <div class="text line">Reached:</div>
+
+                <div class="ProgressBar line">
+                    <progress id="progress" max="15" value="10"></progress>
+                    <div id="progress-begunok">
+                            <img src="begunok.png" alt="begunok">
+                            <span id="progress-value-dollar" class="progress-value-style">$</span>
+                            <span id="progress-value-text" class="progress-value-style">5</span>
+                    </div>
+                </div>
+
+                <div class="goal line">
+                    Target
+                    <hr class="line1"/>
+                    <hr class="line2"/>
+                    <p>$15</p>
+                </div>
+                
+                <div class="comment text">
+                    <img src="image.png" alt="image">
+                    You need $<span id="difference">1</span> more to reach your target.
+                </div>
+            
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>

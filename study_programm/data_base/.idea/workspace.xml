@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="43880936-6aef-41c5-8d29-e2929294d189" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XYVug2GTwzLsGkn5Ct8AVFubip" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15625" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\study_programm\data_base\lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study_programm\data_base\src\Organization" />
+      <recent name="C:\study_programm\data_base\lib" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="example_1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43880936-6aef-41c5-8d29-e2929294d189" name="Default Changelist" comment="" />
+      <created>1581223239785</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581223239785</updated>
+      <workItem from="1581223247780" duration="7662000" />
+      <workItem from="1581430157069" duration="4636000" />
+      <workItem from="1581566310066" duration="5689000" />
+      <workItem from="1584789031444" duration="2738000" />
+      <workItem from="1588312984787" duration="36690000" />
+      <workItem from="1588670850885" duration="7841000" />
+      <workItem from="1588679530785" duration="4063000" />
+      <workItem from="1588739487279" duration="4218000" />
+      <workItem from="1588821721668" duration="6986000" />
+      <workItem from="1588846926170" duration="108000" />
+      <workItem from="1588847089743" duration="227000" />
+      <workItem from="1589096779619" duration="3333000" />
+      <workItem from="1589254721318" duration="14956000" />
+      <workItem from="1589354715101" duration="11651000" />
+      <workItem from="1589621278345" duration="10585000" />
+      <workItem from="1589680124291" duration="9973000" />
+      <workItem from="1589962072644" duration="425000" />
+      <workItem from="1589962520902" duration="5806000" />
+      <workItem from="1590033950204" duration="4776000" />
+      <workItem from="1590122826720" duration="13854000" />
+      <workItem from="1590406495830" duration="9083000" />
+      <workItem from="1590468782808" duration="23784000" />
+      <workItem from="1590564836466" duration="8376000" />
+      <workItem from="1590577012223" duration="11297000" />
+      <workItem from="1590641496987" duration="12547000" />
+      <workItem from="1590723891579" duration="3394000" />
+      <workItem from="1590741752433" duration="5495000" />
+      <workItem from="1590904113117" duration="9054000" />
+      <workItem from="1591443710641" duration="3826000" />
+      <workItem from="1591599584138" duration="7554000" />
+      <workItem from="1591684722932" duration="5106000" />
+      <workItem from="1591711422951" duration="179000" />
+      <workItem from="1591864612642" duration="1351000" />
+      <workItem from="1592116742624" duration="3544000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/infCorpus/Controller.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Booking/Controller.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Booking/Controller.java</url>
+          <line>165</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Guest/Controller.java</url>
+          <line>211</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CurrentComplaint/Controller.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/CurrentComplaint/Change.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AboutGuest/FrequentGuest/Period.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/AboutGuest/FrequentGuest/Period.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/infRoom/Controller.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/infRoom/ListGuests.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Menu.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="sql" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

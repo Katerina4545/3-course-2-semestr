@@ -1,0 +1,22 @@
+﻿encoding "UTF-8";
+import "base.proto";
+import "articles_base.proto";
+import "fact_types.proto";
+import "kwtypes.proto";
+import "intervals.gzt";
+import "mounths.gzt";
+import "special words.gzt";
+import "week.gzt";
+import "time.gzt";
+
+TAuxDicArticle "дата"
+{
+	key = {"tomita:gram_date.cxx" type=CUSTOM}
+	key = {"alg:date" type=CUSTOM}		
+}
+
+TAuxDicArticle "время"
+{
+	key = {"tomita:gram_time.cxx" type=CUSTOM}
+
+}

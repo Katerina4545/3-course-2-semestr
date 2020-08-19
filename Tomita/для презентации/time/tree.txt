@@ -1,0 +1,1209 @@
+==================== multiwords ====================
+
+
+
+===================== gram_date.cxx =====================
+
+coverage: 4, weight: 0.41
+date_res  ->  date[*22 января 2017 года] :: 0.43333333
+    date  ->  date_2[*22 января 2017 года] :: 0.43333333
+        date_2  ->  Num[*22]  Mounth[января]  Year[2017 года] :: 0.43333333
+        |   
+        |__ Num  ->  AnyWord[*22] :: 0.66666666
+        |       AnyWord  ->  22 :: 1
+        |   
+        |__ Mounth  ->  {Word%TERM,kw=dates}[*января] :: 1
+        |       {Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> :: 1
+        |           Word  ->  января :: 1
+        |   
+        |__ Year  ->  {AnyWord%TERM}[*2017]  Descr[года] :: 0.43333333
+            |   
+            |__ {AnyWord%TERM}  ->  AnyWord[*2017] :: 0.66666666
+            |       AnyWord  ->  2017 :: 1
+            |   
+            |__ Descr  ->  год[*года] :: 0.66666666
+                    год  ->  года :: 1
+
+coverage: 2, weight: 0.38571428
+date_res  ->  date[*22 января] :: 0.6
+    date  ->  date_2[*22 января] :: 0.6
+        date_2  ->  Num[*22]  Mounth[января] :: 0.6
+        |   
+        |__ Num  ->  AnyWord[*22] :: 0.66666666
+        |       AnyWord  ->  22 :: 1
+        |   
+        |__ Mounth  ->  {Word%TERM,kw=dates}[*января] :: 1
+                {Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> :: 1
+                    Word  ->  января :: 1
+
+coverage: 3, weight: 0.36888888
+date_res  ->  date[*январь 2017 года] :: 0.47777777
+    date  ->  date_2[*январь 2017 года] :: 0.47777777
+        date_2  ->  Mounth[*январь]  Year[2017 года] :: 0.47777777
+        |   
+        |__ Mounth  ->  {Word%TERM,kw=dates}[*январь] :: 1
+        |       {Word%TERM,kw=dates}  ->  Word[*январь]<kwt=dates> :: 1
+        |           Word  ->  январь :: 1
+        |   
+        |__ Year  ->  {AnyWord%TERM}[*2017]  Descr[года] :: 0.43333333
+            |   
+            |__ {AnyWord%TERM}  ->  AnyWord[*2017] :: 0.66666666
+            |       AnyWord  ->  2017 :: 1
+            |   
+            |__ Descr  ->  год[*года] :: 0.66666666
+                    год  ->  года :: 1
+
+coverage: 2, weight: 0.33484848
+date_res  ->  date[*2019 г] :: 0.43333333
+    date  ->  date_2[*2019 г] :: 0.43333333
+        date_2  ->  Year[*2019 г] :: 0.43333333
+            Year  ->  {AnyWord%TERM}[*2019]  Descr[г] :: 0.43333333
+            |   
+            |__ {AnyWord%TERM}  ->  AnyWord[*2019] :: 0.66666666
+            |       AnyWord  ->  2019 :: 1
+            |   
+            |__ Descr  ->  г[*г] :: 0.66666666
+                    г  ->  г :: 1
+
+coverage: 1, weight: 0.33461538
+date_res  ->  date[*22.01.2013] :: 0.66666666
+    date  ->  date_1[*22.01.2013] :: 0.66666666
+        date_1  ->  {AnyWord%TERM}[*22.01.2013] :: 0.66666666
+            {AnyWord%TERM}  ->  AnyWord[*22.01.2013] :: 0.66666666
+                AnyWord  ->  22.01.2013 :: 1
+
+coverage: 4, weight: 0.33406862
+date_res  ->  date[*две тысячи восьмой год] :: 0.35
+    date  ->  date_2[*две тысячи восьмой год] :: 0.35
+        date_2  ->  Year[*две тысячи восьмой год] :: 0.35
+            Year  ->  {Word%TERM@+}[*две тысячи восьмой]  Descr[год] :: 0.35
+            |   
+            |__ {Word%TERM@+}  ->  {Word%TERM@+}[*две тысячи]  {Word%TERM@}[восьмой] :: 0.36666666
+            |   |   
+            |   |__ {Word%TERM@+}  ->  {Word%TERM@+}[*две]  {Word%TERM@}[тысячи] :: 0.43333333
+            |   |   |   
+            |   |   |__ {Word%TERM@+}  ->  {Word%TERM@}[*две] :: 0.66666666
+            |   |   |       {Word%TERM@}  ->  {Word%TERM}[*две] :: 0.66666666
+            |   |   |           {Word%TERM}  ->  Word[*две] :: 0.66666666
+            |   |   |               Word  ->  две :: 1
+            |   |   |   
+            |   |   |__ {Word%TERM@}  ->  {Word%TERM}[*тысячи] :: 0.66666666
+            |   |           {Word%TERM}  ->  Word[*тысячи] :: 0.66666666
+            |   |               Word  ->  тысячи :: 1
+            |   |   
+            |   |__ {Word%TERM@}  ->  {Word%TERM}[*восьмой] :: 0.66666666
+            |           {Word%TERM}  ->  Word[*восьмой] :: 0.66666666
+            |               Word  ->  восьмой :: 1
+            |   
+            |__ Descr  ->  год[*год] :: 0.66666666
+                    год  ->  год :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.47777777
+date_res  ->  date[*22 января] :: 0.6
+    date  ->  date_2[*22 января] :: 0.6
+        date_2  ->  Num[*22]  Mounth[января] :: 0.6
+        |   
+        |__ Num  ->  AnyWord[*22] :: 0.66666666
+        |       AnyWord  ->  22 :: 1
+        |   
+        |__ Mounth  ->  {Word%TERM,kw=dates}[*января] :: 1
+                {Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> :: 1
+                    Word  ->  января :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.47777777
+date_res  ->  date[*января] :: 1
+    date  ->  date_2[*января] :: 1
+        date_2  ->  Mounth[*января] :: 1
+            Mounth  ->  {Word%TERM,kw=dates}[*января] :: 1
+                {Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> :: 1
+                    Word  ->  января :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.41
+date_res  ->  date[*января 2017 года] :: 0.47777777
+    date  ->  date_2[*января 2017 года] :: 0.47777777
+        date_2  ->  Mounth[*января]  Year[2017 года] :: 0.47777777
+        |   
+        |__ Mounth  ->  {Word%TERM,kw=dates}[*января] :: 1
+        |       {Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> :: 1
+        |           Word  ->  января :: 1
+        |   
+        |__ Year  ->  {AnyWord%TERM}[*2017]  Descr[года] :: 0.43333333
+            |   
+            |__ {AnyWord%TERM}  ->  AnyWord[*2017] :: 0.66666666
+            |       AnyWord  ->  2017 :: 1
+            |   
+            |__ Descr  ->  год[*года] :: 0.66666666
+                    год  ->  года :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.34333333
+date_res  ->  date[*2017 года] :: 0.43333333
+    date  ->  date_2[*2017 года] :: 0.43333333
+        date_2  ->  Year[*2017 года] :: 0.43333333
+            Year  ->  {AnyWord%TERM}[*2017]  Descr[года] :: 0.43333333
+            |   
+            |__ {AnyWord%TERM}  ->  AnyWord[*2017] :: 0.66666666
+            |       AnyWord  ->  2017 :: 1
+            |   
+            |__ Descr  ->  год[*года] :: 0.66666666
+                    год  ->  года :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.38571428
+date_res  ->  date[*января] :: 1
+    date  ->  date_2[*января] :: 1
+        date_2  ->  Mounth[*января] :: 1
+            Mounth  ->  {Word%TERM,kw=dates}[*января] :: 1
+                {Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> :: 1
+                    Word  ->  января :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.37857142
+date_res  ->  date[*январь] :: 1
+    date  ->  date_2[*январь] :: 1
+        date_2  ->  Mounth[*январь] :: 1
+            Mounth  ->  {Word%TERM,kw=dates}[*январь] :: 1
+                {Word%TERM,kw=dates}  ->  Word[*январь]<kwt=dates> :: 1
+                    Word  ->  январь :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33555555
+date_res  ->  date[*2017 года] :: 0.43333333
+    date  ->  date_2[*2017 года] :: 0.43333333
+        date_2  ->  Year[*2017 года] :: 0.43333333
+            Year  ->  {AnyWord%TERM}[*2017]  Descr[года] :: 0.43333333
+            |   
+            |__ {AnyWord%TERM}  ->  AnyWord[*2017] :: 0.66666666
+            |       AnyWord  ->  2017 :: 1
+            |   
+            |__ Descr  ->  год[*года] :: 0.66666666
+                    год  ->  года :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.33406862
+date_res  ->  date[*тысячи восьмой год] :: 0.36666666
+    date  ->  date_2[*тысячи восьмой год] :: 0.36666666
+        date_2  ->  Year[*тысячи восьмой год] :: 0.36666666
+            Year  ->  {Word%TERM@+}[*тысячи восьмой]  Descr[год] :: 0.36666666
+            |   
+            |__ {Word%TERM@+}  ->  {Word%TERM@+}[*тысячи]  {Word%TERM@}[восьмой] :: 0.43333333
+            |   |   
+            |   |__ {Word%TERM@+}  ->  {Word%TERM@}[*тысячи] :: 0.66666666
+            |   |       {Word%TERM@}  ->  {Word%TERM}[*тысячи] :: 0.66666666
+            |   |           {Word%TERM}  ->  Word[*тысячи] :: 0.66666666
+            |   |               Word  ->  тысячи :: 1
+            |   |   
+            |   |__ {Word%TERM@}  ->  {Word%TERM}[*восьмой] :: 0.66666666
+            |           {Word%TERM}  ->  Word[*восьмой] :: 0.66666666
+            |               Word  ->  восьмой :: 1
+            |   
+            |__ Descr  ->  год[*год] :: 0.66666666
+                    год  ->  год :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33406862
+date_res  ->  date[*восьмой год] :: 0.43333333
+    date  ->  date_2[*восьмой год] :: 0.43333333
+        date_2  ->  Year[*восьмой год] :: 0.43333333
+            Year  ->  {Word%TERM@+}[*восьмой]  Descr[год] :: 0.43333333
+            |   
+            |__ {Word%TERM@+}  ->  {Word%TERM@}[*восьмой] :: 0.66666666
+            |       {Word%TERM@}  ->  {Word%TERM}[*восьмой] :: 0.66666666
+            |           {Word%TERM}  ->  Word[*восьмой] :: 0.66666666
+            |               Word  ->  восьмой :: 1
+            |   
+            |__ Descr  ->  год[*год] :: 0.66666666
+                    год  ->  год :: 1
+
+
+
+==================== multiwords ====================
+
+2019_г: TAuxDicArticle, 
+	дата, 
+22.01.2013: TAuxDicArticle, 
+	дата, 
+22_января: TAuxDicArticle, 
+	дата, 
+22_января_2017_года: TAuxDicArticle, 
+	дата, 
+год: word, 
+	слова, 
+года: word, 
+	слова, 
+две: time_Day2, time_Night2, time_, 
+	второго, второго_, числа, 
+две_тысячи_восьмой_год: TAuxDicArticle, 
+	дата, 
+январь: dates, 
+	январь, 
+январь_2017_года: TAuxDicArticle, 
+	дата, 
+января: dates, 
+	январь, 
+
+
+===================== gram_time.cxx =====================
+
+coverage: 6, weight: 0.52857142
+time_res  ->  time[*десять часов вечера девять утра 12:00] :: 0.56222222
+    time  ->  time_0[*десять часов вечера девять утра 12:00] :: 0.56222222
+        time_0  ->  time_00[*десять часов вечера девять утра 12:00] :: 0.56222222
+            time_00  ->  time_0[*десять часов вечера девять утра]  time_0[12:00] :: 0.56222222
+            |   
+            |__ time_0  ->  time_00[*десять часов вечера девять утра] :: 0.61
+            |       time_00  ->  time_0[*десять часов вечера девять]  time_0[утра] :: 0.61
+            |       |   
+            |       |__ time_0  ->  time_00[*десять часов вечера девять] :: 0.6
+            |       |       time_00  ->  time_0[*десять часов вечера]  time_0[девять] :: 0.6
+            |       |       |   
+            |       |       |__ time_0  ->  time_00[*десять часов вечера] :: 0.58888888
+            |       |       |       time_00  ->  time_0[*десять часов]  time_0[вечера] :: 0.58888888
+            |       |       |       |   
+            |       |       |       |__ time_0  ->  {AnyWord%TERM@+}[*десять]  Word[часов] :: 0.6
+            |       |       |       |   |   
+            |       |       |       |   |__ {AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*десять] :: 0.66666666
+            |       |       |       |   |       {AnyWord%TERM@}  ->  {AnyWord%TERM}[*десять] :: 0.66666666
+            |       |       |       |   |           {AnyWord%TERM}  ->  AnyWord[*десять] :: 0.66666666
+            |       |       |       |   |               AnyWord  ->  десять :: 1
+            |       |       |       |   |   
+            |       |       |       |   |__ Word  ->  часов :: 1
+            |       |       |       |   
+            |       |       |       |__ time_0  ->  {Word%TERM,kw=exact2}[*вечера] :: 1
+            |       |       |               {Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> :: 1
+            |       |       |                   Word  ->  вечера :: 1
+            |       |       |   
+            |       |       |__ time_0  ->  {Word%TERM@@+}[*девять] :: 1
+            |       |               {Word%TERM@@+}  ->  {Word%TERM@@}[*девять] :: 1
+            |       |                   {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] :: 1
+            |       |                       {Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> :: 1
+            |       |                           Word  ->  девять :: 1
+            |       |   
+            |       |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+            |               {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+            |                   Word  ->  утра :: 1
+            |   
+            |__ time_0  ->  {AnyWord%TERM}[*12:00] :: 0.66666666
+                    {AnyWord%TERM}  ->  AnyWord[*12:00] :: 0.66666666
+                        AnyWord  ->  12:00 :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.6
+time_res  ->  time[*десять] :: 1
+    time  ->  time_0[*десять] :: 1
+        time_0  ->  {Word%TERM@@+}[*десять] :: 1
+            {Word%TERM@@+}  ->  {Word%TERM@@}[*десять] :: 1
+                {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*десять] :: 1
+                    {Word%TERM,kw=time_}  ->  Word[*десять]<kwt=time_> :: 1
+                        Word  ->  десять :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.47777777
+time_res  ->  time[*десять часов] :: 0.6
+    time  ->  time_0[*десять часов] :: 0.6
+        time_0  ->  {AnyWord%TERM@+}[*десять]  Word[часов] :: 0.6
+        |   
+        |__ {AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*десять] :: 0.66666666
+        |       {AnyWord%TERM@}  ->  {AnyWord%TERM}[*десять] :: 0.66666666
+        |           {AnyWord%TERM}  ->  AnyWord[*десять] :: 0.66666666
+        |               AnyWord  ->  десять :: 1
+        |   
+        |__ Word  ->  часов :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.51666666
+time_res  ->  time[*десять часов вечера] :: 0.58888888
+    time  ->  time_0[*десять часов вечера] :: 0.58888888
+        time_0  ->  time_00[*десять часов вечера] :: 0.58888888
+            time_00  ->  time_0[*десять часов]  time_0[вечера] :: 0.58888888
+            |   
+            |__ time_0  ->  {AnyWord%TERM@+}[*десять]  Word[часов] :: 0.6
+            |   |   
+            |   |__ {AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*десять] :: 0.66666666
+            |   |       {AnyWord%TERM@}  ->  {AnyWord%TERM}[*десять] :: 0.66666666
+            |   |           {AnyWord%TERM}  ->  AnyWord[*десять] :: 0.66666666
+            |   |               AnyWord  ->  десять :: 1
+            |   |   
+            |   |__ Word  ->  часов :: 1
+            |   
+            |__ time_0  ->  {Word%TERM,kw=exact2}[*вечера] :: 1
+                    {Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> :: 1
+                        Word  ->  вечера :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.43333333
+time_res  ->  time[*вечера] :: 1
+    time  ->  time_0[*вечера] :: 1
+        time_0  ->  {Word%TERM,kw=exact2}[*вечера] :: 1
+            {Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> :: 1
+                Word  ->  вечера :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.54333333
+time_res  ->  time[*десять часов вечера девять] :: 0.6
+    time  ->  time_0[*десять часов вечера девять] :: 0.6
+        time_0  ->  time_00[*десять часов вечера девять] :: 0.6
+            time_00  ->  time_0[*десять часов вечера]  time_0[девять] :: 0.6
+            |   
+            |__ time_0  ->  time_00[*десять часов вечера] :: 0.58888888
+            |       time_00  ->  time_0[*десять часов]  time_0[вечера] :: 0.58888888
+            |       |   
+            |       |__ time_0  ->  {AnyWord%TERM@+}[*десять]  Word[часов] :: 0.6
+            |       |   |   
+            |       |   |__ {AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*десять] :: 0.66666666
+            |       |   |       {AnyWord%TERM@}  ->  {AnyWord%TERM}[*десять] :: 0.66666666
+            |       |   |           {AnyWord%TERM}  ->  AnyWord[*десять] :: 0.66666666
+            |       |   |               AnyWord  ->  десять :: 1
+            |       |   |   
+            |       |   |__ Word  ->  часов :: 1
+            |       |   
+            |       |__ time_0  ->  {Word%TERM,kw=exact2}[*вечера] :: 1
+            |               {Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> :: 1
+            |                   Word  ->  вечера :: 1
+            |   
+            |__ time_0  ->  {Word%TERM@@+}[*девять] :: 1
+                    {Word%TERM@@+}  ->  {Word%TERM@@}[*девять] :: 1
+                        {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] :: 1
+                            {Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> :: 1
+                                Word  ->  девять :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.47666666
+time_res  ->  time[*вечера девять] :: 0.76666666
+    time  ->  time_0[*вечера девять] :: 0.76666666
+        time_0  ->  time_00[*вечера девять] :: 0.76666666
+            time_00  ->  time_0[*вечера]  time_0[девять] :: 0.76666666
+            |   
+            |__ time_0  ->  {Word%TERM,kw=exact2}[*вечера] :: 1
+            |       {Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> :: 1
+            |           Word  ->  вечера :: 1
+            |   
+            |__ time_0  ->  {Word%TERM@@+}[*девять] :: 1
+                    {Word%TERM@@+}  ->  {Word%TERM@@}[*девять] :: 1
+                        {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] :: 1
+                            {Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> :: 1
+                                Word  ->  девять :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.41
+time_res  ->  time[*девять] :: 1
+    time  ->  time_0[*девять] :: 1
+        time_0  ->  {Word%TERM@@+}[*девять] :: 1
+            {Word%TERM@@+}  ->  {Word%TERM@@}[*девять] :: 1
+                {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] :: 1
+                    {Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> :: 1
+                        Word  ->  девять :: 1
+
+DROPPED OCCURRENCE, coverage: 5, weight: 0.56222222
+time_res  ->  time[*десять часов вечера девять утра] :: 0.61
+    time  ->  time_0[*десять часов вечера девять утра] :: 0.61
+        time_0  ->  time_00[*десять часов вечера девять утра] :: 0.61
+            time_00  ->  time_0[*десять часов вечера девять]  time_0[утра] :: 0.61
+            |   
+            |__ time_0  ->  time_00[*десять часов вечера девять] :: 0.6
+            |       time_00  ->  time_0[*десять часов вечера]  time_0[девять] :: 0.6
+            |       |   
+            |       |__ time_0  ->  time_00[*десять часов вечера] :: 0.58888888
+            |       |       time_00  ->  time_0[*десять часов]  time_0[вечера] :: 0.58888888
+            |       |       |   
+            |       |       |__ time_0  ->  {AnyWord%TERM@+}[*десять]  Word[часов] :: 0.6
+            |       |       |   |   
+            |       |       |   |__ {AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*десять] :: 0.66666666
+            |       |       |   |       {AnyWord%TERM@}  ->  {AnyWord%TERM}[*десять] :: 0.66666666
+            |       |       |   |           {AnyWord%TERM}  ->  AnyWord[*десять] :: 0.66666666
+            |       |       |   |               AnyWord  ->  десять :: 1
+            |       |       |   |   
+            |       |       |   |__ Word  ->  часов :: 1
+            |       |       |   
+            |       |       |__ time_0  ->  {Word%TERM,kw=exact2}[*вечера] :: 1
+            |       |               {Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> :: 1
+            |       |                   Word  ->  вечера :: 1
+            |       |   
+            |       |__ time_0  ->  {Word%TERM@@+}[*девять] :: 1
+            |               {Word%TERM@@+}  ->  {Word%TERM@@}[*девять] :: 1
+            |                   {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] :: 1
+            |                       {Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> :: 1
+            |                           Word  ->  девять :: 1
+            |   
+            |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+                    {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+                        Word  ->  утра :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.50666666
+time_res  ->  time[*вечера девять утра] :: 0.7
+    time  ->  time_0[*вечера девять утра] :: 0.7
+        time_0  ->  time_00[*вечера девять утра] :: 0.7
+            time_00  ->  time_0[*вечера девять]  time_0[утра] :: 0.7
+            |   
+            |__ time_0  ->  time_00[*вечера девять] :: 0.76666666
+            |       time_00  ->  time_0[*вечера]  time_0[девять] :: 0.76666666
+            |       |   
+            |       |__ time_0  ->  {Word%TERM,kw=exact2}[*вечера] :: 1
+            |       |       {Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> :: 1
+            |       |           Word  ->  вечера :: 1
+            |       |   
+            |       |__ time_0  ->  {Word%TERM@@+}[*девять] :: 1
+            |               {Word%TERM@@+}  ->  {Word%TERM@@}[*девять] :: 1
+            |                   {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] :: 1
+            |                       {Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> :: 1
+            |                           Word  ->  девять :: 1
+            |   
+            |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+                    {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+                        Word  ->  утра :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.45111111
+time_res  ->  time[*девять утра] :: 0.76666666
+    time  ->  time_0[*девять утра] :: 0.76666666
+        time_0  ->  time_00[*девять утра] :: 0.76666666
+            time_00  ->  time_0[*девять]  time_0[утра] :: 0.76666666
+            |   
+            |__ time_0  ->  {Word%TERM@@+}[*девять] :: 1
+            |       {Word%TERM@@+}  ->  {Word%TERM@@}[*девять] :: 1
+            |           {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] :: 1
+            |               {Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> :: 1
+            |                   Word  ->  девять :: 1
+            |   
+            |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+                    {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+                        Word  ->  утра :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.39555555
+time_res  ->  time[*утра] :: 1
+    time  ->  time_0[*утра] :: 1
+        time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+            {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+                Word  ->  утра :: 1
+
+DROPPED OCCURRENCE, coverage: 4, weight: 0.48095237
+time_res  ->  time[*вечера девять утра 12:00] :: 0.6
+    time  ->  time_0[*вечера девять утра 12:00] :: 0.6
+        time_0  ->  time_00[*вечера девять утра 12:00] :: 0.6
+            time_00  ->  time_0[*вечера девять утра]  time_0[12:00] :: 0.6
+            |   
+            |__ time_0  ->  time_00[*вечера девять утра] :: 0.7
+            |       time_00  ->  time_0[*вечера девять]  time_0[утра] :: 0.7
+            |       |   
+            |       |__ time_0  ->  time_00[*вечера девять] :: 0.76666666
+            |       |       time_00  ->  time_0[*вечера]  time_0[девять] :: 0.76666666
+            |       |       |   
+            |       |       |__ time_0  ->  {Word%TERM,kw=exact2}[*вечера] :: 1
+            |       |       |       {Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> :: 1
+            |       |       |           Word  ->  вечера :: 1
+            |       |       |   
+            |       |       |__ time_0  ->  {Word%TERM@@+}[*девять] :: 1
+            |       |               {Word%TERM@@+}  ->  {Word%TERM@@}[*девять] :: 1
+            |       |                   {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] :: 1
+            |       |                       {Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> :: 1
+            |       |                           Word  ->  девять :: 1
+            |       |   
+            |       |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+            |               {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+            |                   Word  ->  утра :: 1
+            |   
+            |__ time_0  ->  {AnyWord%TERM}[*12:00] :: 0.66666666
+                    {AnyWord%TERM}  ->  AnyWord[*12:00] :: 0.66666666
+                        AnyWord  ->  12:00 :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.43333333
+time_res  ->  time[*девять утра 12:00] :: 0.58888888
+    time  ->  time_0[*девять утра 12:00] :: 0.58888888
+        time_0  ->  time_00[*девять утра 12:00] :: 0.58888888
+            time_00  ->  time_0[*девять утра]  time_0[12:00] :: 0.58888888
+            |   
+            |__ time_0  ->  time_00[*девять утра] :: 0.76666666
+            |       time_00  ->  time_0[*девять]  time_0[утра] :: 0.76666666
+            |       |   
+            |       |__ time_0  ->  {Word%TERM@@+}[*девять] :: 1
+            |       |       {Word%TERM@@+}  ->  {Word%TERM@@}[*девять] :: 1
+            |       |           {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] :: 1
+            |       |               {Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> :: 1
+            |       |                   Word  ->  девять :: 1
+            |       |   
+            |       |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+            |               {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+            |                   Word  ->  утра :: 1
+            |   
+            |__ time_0  ->  {AnyWord%TERM}[*12:00] :: 0.66666666
+                    {AnyWord%TERM}  ->  AnyWord[*12:00] :: 0.66666666
+                        AnyWord  ->  12:00 :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.38571428
+time_res  ->  time[*утра 12:00] :: 0.6
+    time  ->  time_0[*утра 12:00] :: 0.6
+        time_0  ->  time_00[*утра 12:00] :: 0.6
+            time_00  ->  time_0[*утра]  time_0[12:00] :: 0.6
+            |   
+            |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+            |       {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+            |           Word  ->  утра :: 1
+            |   
+            |__ time_0  ->  {AnyWord%TERM}[*12:00] :: 0.66666666
+                    {AnyWord%TERM}  ->  AnyWord[*12:00] :: 0.66666666
+                        AnyWord  ->  12:00 :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.33809523
+time_res  ->  time[*12:00] :: 0.66666666
+    time  ->  time_0[*12:00] :: 0.66666666
+        time_0  ->  {AnyWord%TERM}[*12:00] :: 0.66666666
+            {AnyWord%TERM}  ->  AnyWord[*12:00] :: 0.66666666
+                AnyWord  ->  12:00 :: 1
+
+
+
+==================== multiwords ====================
+
+вечера: exact2, 
+	конкретные2, 
+девять: time_Day2, time_Night2, time_, 
+	девятого, девятого_, числа, 
+десять: time_Day2, time_Night2, time_, 
+	десятого, десятого_, числа, 
+десять_часов_вечера_девять_утра_12:00: TAuxDicArticle, 
+	время, 
+утра: exact2, 
+	конкретные2, 
+часов: hour, time_Night2, 
+	первого_, час, 
+
+
+===================== gram_time.cxx =====================
+
+coverage: 1, weight: 0.39555555
+time_res  ->  time[*полчетвертого] :: 1
+    time  ->  time_2[*полчетвертого] :: 1
+        time_2  ->  {Word%TERM}[*полчетвертого] :: 1
+            {Word%TERM}  ->  Word[*полчетвертого] :: 0.66666666
+                Word  ->  полчетвертого :: 1
+
+coverage: 3, weight: 0.39575757
+time_res  ->  time[*без пятнадцати пять] :: 0.58888888
+    time  ->  time_3[*без пятнадцати пять] :: 0.58888888
+        time_3  ->  Word[*без]<kwt=after_half>  {Word%TERM,kw=part}[пятнадцати]  {Word%TERM}[пять] :: 0.58888888
+        |   
+        |__ Word  ->  без :: 1
+        |   
+        |__ {Word%TERM,kw=part}  ->  Word[*пятнадцати]<kwt=part> :: 1
+        |       Word  ->  пятнадцати :: 1
+        |   
+        |__ {Word%TERM}  ->  Word[*пять] :: 0.66666666
+                Word  ->  пять :: 1
+
+coverage: 2, weight: 0.38205128
+time_res  ->  time[*половину пятого] :: 0.76666666
+    time  ->  time_2[*половину пятого] :: 0.76666666
+        time_2  ->  {Word%TERM,kw=half}[*половину]  {Word%TERM,kw=time_Day1}[пятого] :: 0.76666666
+        |   
+        |__ {Word%TERM,kw=half}  ->  Word[*половину]<kwt=half> :: 1
+        |       Word  ->  половину :: 1
+        |   
+        |__ {Word%TERM,kw=time_Day1}  ->  Word[*пятого]<kwt=time_Day1> :: 1
+                Word  ->  пятого :: 1
+
+coverage: 3, weight: 0.35146198
+time_res  ->  time[*десять минут восьмого] :: 0.47777777
+    time  ->  time_1[*десять минут восьмого] :: 0.47777777
+        time_1  ->  {AnyWord%TERM@@+}[*десять]  минута[минут]  {Word%TERM@@@+}[восьмого] :: 0.47777777
+        |   
+        |__ {AnyWord%TERM@@+}  ->  {AnyWord%TERM@@}[*десять] :: 0.66666666
+        |       {AnyWord%TERM@@}  ->  {AnyWord%TERM}[*десять] :: 0.66666666
+        |           {AnyWord%TERM}  ->  AnyWord[*десять] :: 0.66666666
+        |               AnyWord  ->  десять :: 1
+        |   
+        |__ минута  ->  минут :: 1
+        |   
+        |__ {Word%TERM@@@+}  ->  {Word%TERM@@@}[*восьмого] :: 1
+                {Word%TERM@@@}  ->  {Word%TERM,kw=time_Day2}[*восьмого] :: 1
+                    {Word%TERM,kw=time_Day2}  ->  Word[*восьмого]<kwt=time_Day2> :: 1
+                        Word  ->  восьмого :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.36888888
+time_res  ->  time[*пятнадцати] :: 1
+    time  ->  time_0[*пятнадцати] :: 1
+        time_0  ->  {Word%TERM@@+}[*пятнадцати] :: 1
+            {Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] :: 1
+                {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] :: 1
+                    {Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> :: 1
+                        Word  ->  пятнадцати :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.39575757
+time_res  ->  time[*пятнадцати пять] :: 0.76666666
+    time  ->  time_0[*пятнадцати пять] :: 0.76666666
+        time_0  ->  {Word%TERM@@+}[*пятнадцати пять] :: 0.76666666
+            {Word%TERM@@+}  ->  {Word%TERM@@+}[*пятнадцати]  {Word%TERM@@}[пять] :: 0.76666666
+            |   
+            |__ {Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] :: 1
+            |       {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] :: 1
+            |           {Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> :: 1
+            |               Word  ->  пятнадцати :: 1
+            |   
+            |__ {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пять] :: 1
+                    {Word%TERM,kw=time_}  ->  Word[*пять]<kwt=time_> :: 1
+                        Word  ->  пять :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.36545454
+time_res  ->  time[*пятнадцати пять] :: 0.6
+    time  ->  time_0[*пятнадцати пять] :: 0.6
+        time_0  ->  {Word%TERM@@+}[*пятнадцати]  {Word%TERM@+}[пять] :: 0.6
+        |   
+        |__ {Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] :: 1
+        |       {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] :: 1
+        |           {Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> :: 1
+        |               Word  ->  пятнадцати :: 1
+        |   
+        |__ {Word%TERM@+}  ->  {Word%TERM@}[*пять] :: 0.66666666
+                {Word%TERM@}  ->  {Word%TERM}[*пять] :: 0.66666666
+                    {Word%TERM}  ->  Word[*пять] :: 0.66666666
+                        Word  ->  пять :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.36545454
+time_res  ->  time[*пять] :: 1
+    time  ->  time_0[*пять] :: 1
+        time_0  ->  {Word%TERM@@+}[*пять] :: 1
+            {Word%TERM@@+}  ->  {Word%TERM@@}[*пять] :: 1
+                {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пять] :: 1
+                    {Word%TERM,kw=time_}  ->  Word[*пять]<kwt=time_> :: 1
+                        Word  ->  пять :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.35367646
+time_res  ->  time[*десять] :: 1
+    time  ->  time_0[*десять] :: 1
+        time_0  ->  {Word%TERM@@+}[*десять] :: 1
+            {Word%TERM@@+}  ->  {Word%TERM@@}[*десять] :: 1
+                {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*десять] :: 1
+                    {Word%TERM,kw=time_}  ->  Word[*десять]<kwt=time_> :: 1
+                        Word  ->  десять :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.35250544
+time_res  ->  time[*десять минут] :: 0.6
+    time  ->  time_0[*десять минут] :: 0.6
+        time_0  ->  {Word%TERM@+}[*десять]  Word[минут] :: 0.6
+        |   
+        |__ {Word%TERM@+}  ->  {Word%TERM@}[*десять] :: 0.66666666
+        |       {Word%TERM@}  ->  {Word%TERM}[*десять] :: 0.66666666
+        |           {Word%TERM}  ->  Word[*десять] :: 0.66666666
+        |               Word  ->  десять :: 1
+        |   
+        |__ Word  ->  минут :: 1
+
+
+
+==================== multiwords ====================
+
+без: after_half, 
+	без, 
+без_пятнадцати_пять: TAuxDicArticle, 
+	время, 
+восьмого: time_Day1, time_Day2, time_Night1, time_Night2, 
+	восьмого, восьмого_, полвосьмого, полвосьмого_, 
+десять: time_Day2, time_Night2, time_, 
+	десятого, десятого_, числа, 
+десять_минут_восьмого: TAuxDicArticle, 
+	время, 
+минут: minute, 
+	минута, 
+половину: half, 
+	половина, 
+половину_пятого: TAuxDicArticle, 
+	время, 
+полчетвертого: TAuxDicArticle, time_Day1, time_Night1, 
+	время, полчетвертого, полчетвертого_, 
+пятнадцати: time_, part, 
+	часть_времени, числа, 
+пятого: time_Day1, time_Day2, time_Night1, time_Night2, 
+	полпятого, полпятого_, пятого, пятого_, 
+пять: time_Day2, time_Night2, time_, 
+	пятого, пятого_, числа, 
+
+
+==================== multiwords ====================
+
+
+
+===================== gram_date.cxx =====================
+
+coverage: 6, weight: 0.39040403
+date_res  ->  date_op[*с 25 янв]  date_cl[до 30 фев] :: 0.45111111
+|   
+|__ date_op  ->  AnyWord[*с]<kwt=open>  date[25 янв] :: 0.47777777
+|   |   
+|   |__ AnyWord  ->  с :: 1
+|   |   
+|   |__ date  ->  date_2[*25 янв] :: 0.6
+|           date_2  ->  Num[*25]  Mounth[янв] :: 0.6
+|           |   
+|           |__ Num  ->  AnyWord[*25] :: 0.66666666
+|           |       AnyWord  ->  25 :: 1
+|           |   
+|           |__ Mounth  ->  {Word%TERM,kw=dates}[*янв] :: 1
+|                   {Word%TERM,kw=dates}  ->  Word[*янв]<kwt=dates> :: 1
+|                       Word  ->  янв :: 1
+|   
+|__ date_cl  ->  AnyWord[*до]<kwt=close>  date[30 фев] :: 0.47777777
+    |   
+    |__ AnyWord  ->  до :: 1
+    |   
+    |__ date  ->  date_2[*30 фев] :: 0.6
+            date_2  ->  Num[*30]  Mounth[фев] :: 0.6
+            |   
+            |__ Num  ->  AnyWord[*30] :: 0.66666666
+            |       AnyWord  ->  30 :: 1
+            |   
+            |__ Mounth  ->  {Word%TERM,kw=dates}[*фев] :: 1
+                    {Word%TERM,kw=dates}  ->  Word[*фев]<kwt=dates> :: 1
+                        Word  ->  фев :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.37314814
+date_res  ->  date_op[*с 25 янв] :: 0.47777777
+    date_op  ->  AnyWord[*с]<kwt=open>  date[25 янв] :: 0.47777777
+    |   
+    |__ AnyWord  ->  с :: 1
+    |   
+    |__ date  ->  date_2[*25 янв] :: 0.6
+            date_2  ->  Num[*25]  Mounth[янв] :: 0.6
+            |   
+            |__ Num  ->  AnyWord[*25] :: 0.66666666
+            |       AnyWord  ->  25 :: 1
+            |   
+            |__ Mounth  ->  {Word%TERM,kw=dates}[*янв] :: 1
+                    {Word%TERM,kw=dates}  ->  Word[*янв]<kwt=dates> :: 1
+                        Word  ->  янв :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.37314814
+date_res  ->  date[*25 янв] :: 0.6
+    date  ->  date_2[*25 янв] :: 0.6
+        date_2  ->  Num[*25]  Mounth[янв] :: 0.6
+        |   
+        |__ Num  ->  AnyWord[*25] :: 0.66666666
+        |       AnyWord  ->  25 :: 1
+        |   
+        |__ Mounth  ->  {Word%TERM,kw=dates}[*янв] :: 1
+                {Word%TERM,kw=dates}  ->  Word[*янв]<kwt=dates> :: 1
+                    Word  ->  янв :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.37314814
+date_res  ->  date[*янв] :: 1
+    date  ->  date_2[*янв] :: 1
+        date_2  ->  Mounth[*янв] :: 1
+            Mounth  ->  {Word%TERM,kw=dates}[*янв] :: 1
+                {Word%TERM,kw=dates}  ->  Word[*янв]<kwt=dates> :: 1
+                    Word  ->  янв :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.36262626
+date_res  ->  date_cl[*до 30 фев] :: 0.47777777
+    date_cl  ->  AnyWord[*до]<kwt=close>  date[30 фев] :: 0.47777777
+    |   
+    |__ AnyWord  ->  до :: 1
+    |   
+    |__ date  ->  date_2[*30 фев] :: 0.6
+            date_2  ->  Num[*30]  Mounth[фев] :: 0.6
+            |   
+            |__ Num  ->  AnyWord[*30] :: 0.66666666
+            |       AnyWord  ->  30 :: 1
+            |   
+            |__ Mounth  ->  {Word%TERM,kw=dates}[*фев] :: 1
+                    {Word%TERM,kw=dates}  ->  Word[*фев]<kwt=dates> :: 1
+                        Word  ->  фев :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.36262626
+date_res  ->  date[*30 фев] :: 0.6
+    date  ->  date_2[*30 фев] :: 0.6
+        date_2  ->  Num[*30]  Mounth[фев] :: 0.6
+        |   
+        |__ Num  ->  AnyWord[*30] :: 0.66666666
+        |       AnyWord  ->  30 :: 1
+        |   
+        |__ Mounth  ->  {Word%TERM,kw=dates}[*фев] :: 1
+                {Word%TERM,kw=dates}  ->  Word[*фев]<kwt=dates> :: 1
+                    Word  ->  фев :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.36262626
+date_res  ->  date[*фев] :: 1
+    date  ->  date_2[*фев] :: 1
+        date_2  ->  Mounth[*фев] :: 1
+            Mounth  ->  {Word%TERM,kw=dates}[*фев] :: 1
+                {Word%TERM,kw=dates}  ->  Word[*фев]<kwt=dates> :: 1
+                    Word  ->  фев :: 1
+
+
+
+===================== gram_time.cxx =====================
+
+coverage: 4, weight: 0.39555555
+time_res  ->  time_str[*между 10 и 11 утра] :: 0.41
+    time_str  ->  Word[*между]<kwt=str>  time[10]  SimConjAnd[и]  time[11 утра] :: 0.41
+    |   
+    |__ Word  ->  между :: 1
+    |   
+    |__ time  ->  time_0[*10] :: 0.66666666
+    |       time_0  ->  {AnyWord%TERM}[*10] :: 0.66666666
+    |           {AnyWord%TERM}  ->  AnyWord[*10] :: 0.66666666
+    |               AnyWord  ->  10 :: 1
+    |   
+    |__ SimConjAnd  ->  и :: 1
+    |   
+    |__ time  ->  time_0[*11 утра] :: 0.6
+            time_0  ->  time_00[*11 утра] :: 0.6
+                time_00  ->  time_0[*11]  time_0[утра] :: 0.6
+                |   
+                |__ time_0  ->  {AnyWord%TERM}[*11] :: 0.66666666
+                |       {AnyWord%TERM}  ->  AnyWord[*11] :: 0.66666666
+                |           AnyWord  ->  11 :: 1
+                |   
+                |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+                        {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+                            Word  ->  утра :: 1
+
+coverage: 1, weight: 0.37314814
+time_res  ->  time[*обед] :: 1
+    time  ->  time_0[*обед] :: 1
+        time_0  ->  {Word%TERM,kw=exact2}[*обед] :: 1
+            {Word%TERM,kw=exact2}  ->  Word[*обед]<kwt=exact2> :: 1
+                Word  ->  обед :: 1
+
+coverage: 2, weight: 0.36545454
+time_res  ->  time_op[*после обеда] :: 0.6
+    time_op  ->  Word[*после]<kwt=open>  time[обеда] :: 0.6
+    |   
+    |__ Word  ->  после :: 1
+    |   
+    |__ time  ->  time_0[*обеда] :: 1
+            time_0  ->  {Word%TERM,kw=exact2}[*обеда] :: 1
+                {Word%TERM,kw=exact2}  ->  Word[*обеда]<kwt=exact2> :: 1
+                    Word  ->  обеда :: 1
+
+coverage: 3, weight: 0.33443223
+time_res  ->  time_op[*с 22 часов] :: 0.36666666
+    time_op  ->  Word[*с]<kwt=open>  time[22 часов] :: 0.36666666
+    |   
+    |__ Word  ->  с :: 1
+    |   
+    |__ time  ->  time_0[*22 часов] :: 0.43333333
+            time_0  ->  {AnyWord%TERM}[*22]  Word[часов]<kwt=hour> :: 0.43333333
+            |   
+            |__ {AnyWord%TERM}  ->  AnyWord[*22] :: 0.66666666
+            |       AnyWord  ->  22 :: 1
+            |   
+            |__ Word  ->  часов :: 1
+
+coverage: 4, weight: 0.35146198
+time_res  ->  time_op[*с пятнадцати ноль ноль] :: 0.43333333
+    time_op  ->  Word[*с]<kwt=open>  time[пятнадцати ноль ноль] :: 0.43333333
+    |   
+    |__ Word  ->  с :: 1
+    |   
+    |__ time  ->  time_0[*пятнадцати ноль ноль] :: 0.47777777
+            time_0  ->  {Word%TERM@@+}[*пятнадцати]  {ноль%LEMMA+}[ноль ноль] :: 0.47777777
+            |   
+            |__ {Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] :: 1
+            |       {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] :: 1
+            |           {Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> :: 1
+            |               Word  ->  пятнадцати :: 1
+            |   
+            |__ {ноль%LEMMA+}  ->  {ноль%LEMMA+}[*ноль]  {ноль%LEMMA}[ноль] :: 0.43333333
+                |   
+                |__ {ноль%LEMMA+}  ->  {ноль%LEMMA}[*ноль] :: 0.66666666
+                |       {ноль%LEMMA}  ->  ноль[*ноль] :: 0.66666666
+                |           ноль  ->  ноль :: 1
+                |   
+                |__ {ноль%LEMMA}  ->  ноль[*ноль] :: 0.66666666
+                        ноль  ->  ноль :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.36666666
+time_res  ->  time[*10] :: 0.66666666
+    time  ->  time_0[*10] :: 0.66666666
+        time_0  ->  {AnyWord%TERM}[*10] :: 0.66666666
+            {AnyWord%TERM}  ->  AnyWord[*10] :: 0.66666666
+                AnyWord  ->  10 :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.34333333
+time_res  ->  time_str[*между 10 и 11] :: 0.35
+    time_str  ->  Word[*между]<kwt=str>  time[10]  SimConjAnd[и]  time[11] :: 0.35
+    |   
+    |__ Word  ->  между :: 1
+    |   
+    |__ time  ->  time_0[*10] :: 0.66666666
+    |       time_0  ->  {AnyWord%TERM}[*10] :: 0.66666666
+    |           {AnyWord%TERM}  ->  AnyWord[*10] :: 0.66666666
+    |               AnyWord  ->  10 :: 1
+    |   
+    |__ SimConjAnd  ->  и :: 1
+    |   
+    |__ time  ->  time_0[*11] :: 0.66666666
+            time_0  ->  {AnyWord%TERM}[*11] :: 0.66666666
+                {AnyWord%TERM}  ->  AnyWord[*11] :: 0.66666666
+                    AnyWord  ->  11 :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.34333333
+time_res  ->  time[*10 и 11] :: 0.36666666
+    time  ->  time_0[*10 и 11] :: 0.36666666
+        time_0  ->  time_00[*10 и 11] :: 0.36666666
+            time_00  ->  time_0[*10]  SimConjAnd[и]  time_0[11] :: 0.36666666
+            |   
+            |__ time_0  ->  {AnyWord%TERM}[*10] :: 0.66666666
+            |       {AnyWord%TERM}  ->  AnyWord[*10] :: 0.66666666
+            |           AnyWord  ->  10 :: 1
+            |   
+            |__ SimConjAnd  ->  и :: 1
+            |   
+            |__ time_0  ->  {AnyWord%TERM}[*11] :: 0.66666666
+                    {AnyWord%TERM}  ->  AnyWord[*11] :: 0.66666666
+                        AnyWord  ->  11 :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.34333333
+time_res  ->  time[*11] :: 0.66666666
+    time  ->  time_0[*11] :: 0.66666666
+        time_0  ->  {AnyWord%TERM}[*11] :: 0.66666666
+            {AnyWord%TERM}  ->  AnyWord[*11] :: 0.66666666
+                AnyWord  ->  11 :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.39555555
+time_res  ->  time[*10 и 11 утра] :: 0.43333333
+    time  ->  time_0[*10 и 11 утра] :: 0.43333333
+        time_0  ->  time_00[*10 и 11 утра] :: 0.43333333
+            time_00  ->  time_0[*10 и 11]  time_0[утра] :: 0.43333333
+            |   
+            |__ time_0  ->  time_00[*10 и 11] :: 0.36666666
+            |       time_00  ->  time_0[*10]  SimConjAnd[и]  time_0[11] :: 0.36666666
+            |       |   
+            |       |__ time_0  ->  {AnyWord%TERM}[*10] :: 0.66666666
+            |       |       {AnyWord%TERM}  ->  AnyWord[*10] :: 0.66666666
+            |       |           AnyWord  ->  10 :: 1
+            |       |   
+            |       |__ SimConjAnd  ->  и :: 1
+            |       |   
+            |       |__ time_0  ->  {AnyWord%TERM}[*11] :: 0.66666666
+            |               {AnyWord%TERM}  ->  AnyWord[*11] :: 0.66666666
+            |                   AnyWord  ->  11 :: 1
+            |   
+            |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+                    {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+                        Word  ->  утра :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.39555555
+time_res  ->  time[*11 утра] :: 0.6
+    time  ->  time_0[*11 утра] :: 0.6
+        time_0  ->  time_00[*11 утра] :: 0.6
+            time_00  ->  time_0[*11]  time_0[утра] :: 0.6
+            |   
+            |__ time_0  ->  {AnyWord%TERM}[*11] :: 0.66666666
+            |       {AnyWord%TERM}  ->  AnyWord[*11] :: 0.66666666
+            |           AnyWord  ->  11 :: 1
+            |   
+            |__ time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+                    {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+                        Word  ->  утра :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.39555555
+time_res  ->  time[*утра] :: 1
+    time  ->  time_0[*утра] :: 1
+        time_0  ->  {Word%TERM,kw=exact2}[*утра] :: 1
+            {Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> :: 1
+                Word  ->  утра :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.36545454
+time_res  ->  time[*обеда] :: 1
+    time  ->  time_0[*обеда] :: 1
+        time_0  ->  {Word%TERM,kw=exact2}[*обеда] :: 1
+            {Word%TERM,kw=exact2}  ->  Word[*обеда]<kwt=exact2> :: 1
+                Word  ->  обеда :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33461538
+time_res  ->  time_op[*с 22] :: 0.43333333
+    time_op  ->  Word[*с]<kwt=open>  time[22] :: 0.43333333
+    |   
+    |__ Word  ->  с :: 1
+    |   
+    |__ time  ->  time_0[*22] :: 0.66666666
+            time_0  ->  {AnyWord%TERM}[*22] :: 0.66666666
+                {AnyWord%TERM}  ->  AnyWord[*22] :: 0.66666666
+                    AnyWord  ->  22 :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.33461538
+time_res  ->  time[*22] :: 0.66666666
+    time  ->  time_0[*22] :: 0.66666666
+        time_0  ->  {AnyWord%TERM}[*22] :: 0.66666666
+            {AnyWord%TERM}  ->  AnyWord[*22] :: 0.66666666
+                AnyWord  ->  22 :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.33443223
+time_res  ->  time[*22 часов] :: 0.43333333
+    time  ->  time_0[*22 часов] :: 0.43333333
+        time_0  ->  {AnyWord%TERM}[*22]  Word[часов]<kwt=hour> :: 0.43333333
+        |   
+        |__ {AnyWord%TERM}  ->  AnyWord[*22] :: 0.66666666
+        |       AnyWord  ->  22 :: 1
+        |   
+        |__ Word  ->  часов :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.35367646
+time_res  ->  time_op[*с пятнадцати] :: 0.6
+    time_op  ->  Word[*с]<kwt=open>  time[пятнадцати] :: 0.6
+    |   
+    |__ Word  ->  с :: 1
+    |   
+    |__ time  ->  time_0[*пятнадцати] :: 1
+            time_0  ->  {Word%TERM@@+}[*пятнадцати] :: 1
+                {Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] :: 1
+                    {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] :: 1
+                        {Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> :: 1
+                            Word  ->  пятнадцати :: 1
+
+DROPPED OCCURRENCE, coverage: 1, weight: 0.35367646
+time_res  ->  time[*пятнадцати] :: 1
+    time  ->  time_0[*пятнадцати] :: 1
+        time_0  ->  {Word%TERM@@+}[*пятнадцати] :: 1
+            {Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] :: 1
+                {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] :: 1
+                    {Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> :: 1
+                        Word  ->  пятнадцати :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.35250544
+time_res  ->  time_op[*с пятнадцати ноль] :: 0.47777777
+    time_op  ->  Word[*с]<kwt=open>  time[пятнадцати ноль] :: 0.47777777
+    |   
+    |__ Word  ->  с :: 1
+    |   
+    |__ time  ->  time_0[*пятнадцати ноль] :: 0.6
+            time_0  ->  {Word%TERM@@+}[*пятнадцати]  {ноль%LEMMA+}[ноль] :: 0.6
+            |   
+            |__ {Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] :: 1
+            |       {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] :: 1
+            |           {Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> :: 1
+            |               Word  ->  пятнадцати :: 1
+            |   
+            |__ {ноль%LEMMA+}  ->  {ноль%LEMMA}[*ноль] :: 0.66666666
+                    {ноль%LEMMA}  ->  ноль[*ноль] :: 0.66666666
+                        ноль  ->  ноль :: 1
+
+DROPPED OCCURRENCE, coverage: 2, weight: 0.35250544
+time_res  ->  time[*пятнадцати ноль] :: 0.6
+    time  ->  time_0[*пятнадцати ноль] :: 0.6
+        time_0  ->  {Word%TERM@@+}[*пятнадцати]  {ноль%LEMMA+}[ноль] :: 0.6
+        |   
+        |__ {Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] :: 1
+        |       {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] :: 1
+        |           {Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> :: 1
+        |               Word  ->  пятнадцати :: 1
+        |   
+        |__ {ноль%LEMMA+}  ->  {ноль%LEMMA}[*ноль] :: 0.66666666
+                {ноль%LEMMA}  ->  ноль[*ноль] :: 0.66666666
+                    ноль  ->  ноль :: 1
+
+DROPPED OCCURRENCE, coverage: 3, weight: 0.35146198
+time_res  ->  time[*пятнадцати ноль ноль] :: 0.47777777
+    time  ->  time_0[*пятнадцати ноль ноль] :: 0.47777777
+        time_0  ->  {Word%TERM@@+}[*пятнадцати]  {ноль%LEMMA+}[ноль ноль] :: 0.47777777
+        |   
+        |__ {Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] :: 1
+        |       {Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] :: 1
+        |           {Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> :: 1
+        |               Word  ->  пятнадцати :: 1
+        |   
+        |__ {ноль%LEMMA+}  ->  {ноль%LEMMA+}[*ноль]  {ноль%LEMMA}[ноль] :: 0.43333333
+            |   
+            |__ {ноль%LEMMA+}  ->  {ноль%LEMMA}[*ноль] :: 0.66666666
+            |       {ноль%LEMMA}  ->  ноль[*ноль] :: 0.66666666
+            |           ноль  ->  ноль :: 1
+            |   
+            |__ {ноль%LEMMA}  ->  ноль[*ноль] :: 0.66666666
+                    ноль  ->  ноль :: 1
+
+
+
+==================== multiwords ====================
+
+до: close, 
+	закрывающие, 
+между: str, 
+	между, 
+между_10_и_11_утра: TAuxDicArticle, 
+	время, 
+обед: TAuxDicArticle, exact2, 
+	время, конкретные2, 
+обеда: exact2, 
+	конкретные2, 
+после: open, 
+	открывающие, 
+после_обеда: TAuxDicArticle, 
+	время, 
+пятнадцати: time_, part, 
+	часть_времени, числа, 
+с: open, 
+	открывающие, 
+с_22_часов: TAuxDicArticle, 
+	время, 
+с_25_янв_до_30_фев: TAuxDicArticle, 
+	дата, 
+с_пятнадцати_ноль_ноль: TAuxDicArticle, 
+	время, 
+утра: exact2, 
+	конкретные2, 
+фев: dates, 
+	февраль, 
+часов: hour, time_Night2, 
+	первого_, час, 
+янв: dates, 
+	январь, 
+
+
+==================== multiwords ====================
+
+
+
+===================== gram_date.cxx =====================
+
+coverage: 3, weight: 0.51666666
+date_res  ->  date[*через два дня] :: 0.58888888
+    date  ->  {Word%TERM,kw=add}[*через]  {Word%TERM}[два]  {Word%TERM}[дня] :: 0.58888888
+    |   
+    |__ {Word%TERM,kw=add}  ->  Word[*через]<kwt=add> :: 1
+    |       Word  ->  через :: 1
+    |   
+    |__ {Word%TERM}  ->  Word[*два] :: 0.66666666
+    |       Word  ->  два :: 1
+    |   
+    |__ {Word%TERM}  ->  Word[*дня] :: 0.66666666
+            Word  ->  дня :: 1
+
+coverage: 2, weight: 0.45111111
+date_res  ->  date[*через месяц] :: 0.76666666
+    date  ->  {Word%TERM,kw=add}[*через]  {Word%TERM}[месяц] :: 0.76666666
+    |   
+    |__ {Word%TERM,kw=add}  ->  Word[*через]<kwt=add> :: 1
+    |       Word  ->  через :: 1
+    |   
+    |__ {Word%TERM}  ->  Word[*месяц] :: 0.66666666
+            Word  ->  месяц :: 1
+
+coverage: 2, weight: 0.41018518
+date_res  ->  date[*следующей неделе] :: 0.76666666
+    date  ->  {Word%TERM,kw=add}[*следующей]  {Word%TERM}[неделе] :: 0.76666666
+    |   
+    |__ {Word%TERM,kw=add}  ->  Word[*следующей]<kwt=add> :: 1
+    |       Word  ->  следующей :: 1
+    |   
+    |__ {Word%TERM}  ->  Word[*неделе] :: 0.66666666
+            Word  ->  неделе :: 1
+
+
+
+==================== multiwords ====================
+
+два: time_Day2, time_Night2, time_, 
+	второго, второго_, числа, 
+дня: exact2, 
+	конкретные2, 
+месяц: word, 
+	слова, 
+неделе: word, 
+	слова, 
+следующей: add, 
+	дополнительные, 
+следующей_неделе: TAuxDicArticle, 
+	дата, 
+через: add, 
+	дополнительные, 
+через_два_дня: TAuxDicArticle, 
+	дата, 
+через_месяц: TAuxDicArticle, 
+	дата, 
+
+
+==================== multiwords ====================
+
+
+
+==================== multiwords ====================
+
+без: after_half, 
+	без, 
+
+

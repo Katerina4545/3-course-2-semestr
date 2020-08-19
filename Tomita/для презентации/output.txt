@@ -1,0 +1,152 @@
+/ / / / точные даты 
+22 января 2017 года 22 января январь 2017 года 2019 г 22.01.2013 две тысячи восьмой год 
+	Date
+	{
+		Num = 22
+		Mounth = январь
+		Year = 2017
+		TypeRes = true
+	}
+	Date
+	{
+		Num = 22
+		Mounth = январь
+		TypeRes = true
+	}
+	Date
+	{
+		Mounth = январь
+		Year = 2017
+		TypeRes = true
+	}
+	Date
+	{
+		Year = 2019
+		TypeRes = true
+	}
+	Date
+	{
+		Year = 22.01.2013
+		TypeRes = true
+	}
+	Date
+	{
+		Year = две тысячи восьмой
+		TypeRes = true
+	}
+десять часов вечера девять утра 12:00 
+	Time
+	{
+		TimeOfDay = вечер
+		Hour = десять
+		TypeRes = true
+	}
+	Time
+	{
+		TimeOfDay = утро
+		Hour = девять
+		TypeRes = true
+	}
+	Time
+	{
+		Hour = 12:00
+		TypeRes = true
+	}
+русский текст русский текст полчетвертого русский текст без пятнадцати пять в половину пятого русский текст десять минут восьмого русский текст 
+	Time
+	{
+		Hour = 15
+		Minutes = 30
+		Type = half
+		TypeRes = true
+	}
+	Time
+	{
+		Hour = пять
+		Minutes = пятнадцать
+		Type = after_half
+		TypeRes = true
+	}
+	Time
+	{
+		Hour = 16
+		Minutes = 30
+		Type = half
+		TypeRes = true
+	}
+	Time
+	{
+		Hour = 19
+		Minutes = десять
+		Type = before_half
+		TypeRes = true
+	}
+/ / / / промежутки времени 
+между 10 и 11 утра с 25 янв до 30 фев в обед после обеда с 22 часов или с пятнадцати ноль ноль 
+	Time
+	{
+		Hour = 10
+		TypeBegin = true
+	}
+	Time
+	{
+		TimeOfDay = утро
+		Hour = 11
+		TypeEnd = true
+	}
+	Time
+	{
+		TimeOfDay = обед
+		TypeRes = true
+	}
+	Time
+	{
+		TimeOfDay = обед
+		TypeBegin = true
+	}
+	Time
+	{
+		Hour = 22
+		TypeBegin = true
+	}
+	Time
+	{
+		Hour = пятнадцать
+		Minutes = ноль ноль
+		TypeBegin = true
+	}
+	Date
+	{
+		Num = 25
+		Mounth = январь
+		TypeBegin = true
+	}
+	Date
+	{
+		Num = 30
+		Mounth = февраль
+		TypeEnd = true
+	}
+/ / / / относительное время 
+через два дня через месяц на следующей неделе 
+	Date
+	{
+		SpecialWords = через
+		Num = два
+		Name = день
+		TypeRes = true
+	}
+	Date
+	{
+		SpecialWords = через
+		Name = месяц
+		TypeRes = true
+	}
+	Date
+	{
+		SpecialWords = следующая
+		Name = неделя
+		TypeRes = true
+	}
+/ / / / ошибки 
+в 34:13 без пятидесяти сорок 

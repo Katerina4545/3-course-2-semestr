@@ -1,0 +1,34 @@
+﻿import "base.proto";
+import "facttypes_base.proto";
+
+message Date :NFactType.TFact
+{
+	optional string SpecialWords = 1;	
+	optional string Num       	 = 2;
+	optional string Name         = 3;
+	
+	optional string Day          = 4;
+	optional string Mounth       = 5;
+	optional string Year         = 6;
+	
+	optional bool   TypeBegin    = 7;
+	optional bool   TypeEnd      = 8; 
+	optional bool   TypeRes      = 9; 
+}
+
+message Time:NFactType.TFact
+{
+	optional string SpecialWords = 1;	
+	optional string Num          = 2;
+	optional string Name         = 3;
+	
+	optional string TimeOfDay    = 4;
+	optional string Hour         = 5;
+	optional string Minutes      = 6;
+
+	optional string Type         = 7;
+	
+	optional bool   TypeBegin    = 8; 
+	optional bool   TypeEnd      = 9;
+	optional bool   TypeRes      = 10;	
+}

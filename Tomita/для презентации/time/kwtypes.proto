@@ -1,0 +1,45 @@
+﻿import "base.proto";
+import "articles_base.proto";
+
+import "kwtypes_base.proto";
+
+
+message dates 		: TAuxDicArticle{}
+
+message week 		: TAuxDicArticle{}
+
+message open 		: TAuxDicArticle{}
+
+message close 		: TAuxDicArticle{}
+
+message exact 		: TAuxDicArticle{}
+
+message str   		: TAuxDicArticle{}
+
+message add   		: TAuxDicArticle{}
+
+message word   		: TAuxDicArticle{}
+
+
+message minute		: TAuxDicArticle{}
+
+message hour  		: TAuxDicArticle{}
+
+message half  		: TAuxDicArticle{}
+
+message time_Day1  	: TAuxDicArticle{}
+
+message time_Day2  	: TAuxDicArticle{}
+
+
+message time_Night1	: TAuxDicArticle{}
+
+message time_Night2	: TAuxDicArticle{}
+
+message time_   	: TAuxDicArticle{}
+
+message part    	: TAuxDicArticle{}
+
+message after_half  : TAuxDicArticle{}
+
+message exact2      : TAuxDicArticle{}

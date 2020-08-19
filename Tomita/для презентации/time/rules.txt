@@ -1,0 +1,6570 @@
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*точные] ::
+
+
+{Word%TERM}  ->  Word[*точные] ::
+
+
+date_1  ->  {AnyWord%TERM}[*точные] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*точные] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*даты] ::
+
+
+{Word%TERM}  ->  Word[*даты] ::
+
+
+date_1  ->  {AnyWord%TERM}[*даты] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+********************************** finished gram_date.cxx **********************************
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*точные] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*точные] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*точные] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*точные] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*точные] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*точные] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*точные] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*даты] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*даты] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*даты] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*даты] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*даты] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+********************************** finished gram_time.cxx **********************************
+
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+Num  ->  AnyWord[*22] ::
+    Ok: wfm[0]=/^[1-3][0-9]$/
+        wfm[0]=/^[1-9]$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*22] ::
+
+
+{Word%TERM}  ->  Word[*22] ::
+
+
+date_1  ->  {AnyWord%TERM}[*22] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*января] ::
+
+
+{Word%TERM}  ->  Word[*января] ::
+
+
+{Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> ::
+
+
+{Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> ::
+
+
+date_1  ->  {AnyWord%TERM}[*января] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*января] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Mounth  ->  {Word%TERM,kw=dates}[*января] ::
+
+
+Mounth  ->  {Word%TERM,kw=dates}[*января] ::
+
+
+date_2  ->  Mounth[*января] ::
+
+
+date_2  ->  Num[*22]  Mounth[января] ::
+
+
+date  ->  date_2[*января] ::
+
+
+date  ->  date_2[*22 января] ::
+
+
+date_res  ->  date[*января] ::
+
+
+date_res  ->  date[*22 января] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*2017] ::
+
+
+{Word%TERM}  ->  Word[*2017] ::
+
+
+{Word%TERM}  ->  Word[*2017] ::
+
+
+{Word%TERM}  ->  Word[*2017] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*2017] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*2017] ::
+
+
+date_1  ->  {AnyWord%TERM}[*2017] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*2017] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*2017] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*2017] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*года] ::
+
+
+{Word%TERM}  ->  Word[*года] ::
+
+
+Descr  ->  год[*года] ::
+
+
+Descr  ->  год[*года] ::
+
+
+date_1  ->  {AnyWord%TERM}[*года] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*года] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Year  ->  {AnyWord%TERM}[*2017]  Descr[года] ::
+    Ok: wfm[0]=/^[1-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+Year  ->  {AnyWord%TERM}[*2017]  Descr[года] ::
+    Ok: wfm[0]=/^[1-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+Year  ->  {AnyWord%TERM}[*2017]  Descr[года] ::
+    Ok: wfm[0]=/^[1-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date_2  ->  Year[*2017 года] ::
+
+
+date_2  ->  Mounth[*января]  Year[2017 года] ::
+
+
+date_2  ->  Num[*22]  Mounth[января]  Year[2017 года] ::
+
+
+date  ->  date_2[*2017 года] ::
+
+
+date  ->  date_2[*января 2017 года] ::
+
+
+date  ->  date_2[*22 января 2017 года] ::
+
+
+date_res  ->  date[*2017 года] ::
+
+
+date_res  ->  date[*января 2017 года] ::
+
+
+date_res  ->  date[*22 января 2017 года] ::
+
+
+Num  ->  AnyWord[*22] ::
+    Ok: wfm[0]=/^[1-3][0-9]$/
+        wfm[0]=/^[1-9]$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*22] ::
+
+
+{Word%TERM}  ->  Word[*22] ::
+
+
+date_1  ->  {AnyWord%TERM}[*22] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Num  ->  AnyWord[*января] ::
+>> FAILED:
+        wfm[0]=/^[1-3][0-9]$/
+        wfm[0]=/^[1-9]$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*января] ::
+
+
+{Word%TERM}  ->  Word[*января] ::
+
+
+{Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> ::
+
+
+{Word%TERM,kw=dates}  ->  Word[*января]<kwt=dates> ::
+
+
+date_1  ->  {AnyWord%TERM}[*января] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*января] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Mounth  ->  {Word%TERM,kw=dates}[*января] ::
+
+
+Mounth  ->  {Word%TERM,kw=dates}[*января] ::
+
+
+date_2  ->  Mounth[*января] ::
+
+
+date_2  ->  Num[*22]  Mounth[января] ::
+
+
+date  ->  date_2[*января] ::
+
+
+date  ->  date_2[*22 января] ::
+
+
+date_res  ->  date[*января] ::
+
+
+date_res  ->  date[*22 января] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*январь] ::
+
+
+{Word%TERM}  ->  Word[*январь] ::
+
+
+{Word%TERM}  ->  Word[*январь] ::
+
+
+{Word%TERM}  ->  Word[*январь] ::
+
+
+{Word%TERM,kw=dates}  ->  Word[*январь]<kwt=dates> ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*январь] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*январь] ::
+
+
+date_1  ->  {AnyWord%TERM}[*январь] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*январь] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*январь] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*январь] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Mounth  ->  {Word%TERM,kw=dates}[*январь] ::
+
+
+date_2  ->  Mounth[*январь] ::
+
+
+date  ->  date_2[*январь] ::
+
+
+date_res  ->  date[*январь] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*2017] ::
+
+
+{Word%TERM}  ->  Word[*2017] ::
+
+
+{Word%TERM}  ->  Word[*2017] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*2017] ::
+
+
+date_1  ->  {AnyWord%TERM}[*2017] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*2017] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*2017] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*года] ::
+
+
+{Word%TERM}  ->  Word[*года] ::
+
+
+Descr  ->  год[*года] ::
+
+
+Descr  ->  год[*года] ::
+
+
+date_1  ->  {AnyWord%TERM}[*года] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*года] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Year  ->  {AnyWord%TERM}[*2017]  Descr[года] ::
+    Ok: wfm[0]=/^[1-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+Year  ->  {AnyWord%TERM}[*2017]  Descr[года] ::
+    Ok: wfm[0]=/^[1-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date_2  ->  Year[*2017 года] ::
+
+
+date_2  ->  Mounth[*январь]  Year[2017 года] ::
+
+
+date  ->  date_2[*2017 года] ::
+
+
+date  ->  date_2[*январь 2017 года] ::
+
+
+date_res  ->  date[*2017 года] ::
+
+
+date_res  ->  date[*январь 2017 года] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*2019] ::
+
+
+{Word%TERM}  ->  Word[*2019] ::
+
+
+date_1  ->  {AnyWord%TERM}[*2019] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*2019] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*г] ::
+
+
+{Word%TERM}  ->  Word[*г] ::
+
+
+Descr  ->  г[*г] ::
+
+
+date_1  ->  {AnyWord%TERM}[*г] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*г] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Year  ->  {AnyWord%TERM}[*2019]  Descr[г] ::
+    Ok: wfm[0]=/^[1-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date_2  ->  Year[*2019 г] ::
+
+
+date  ->  date_2[*2019 г] ::
+
+
+date_res  ->  date[*2019 г] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*22.01.2013] ::
+
+
+{Word%TERM}  ->  Word[*22.01.2013] ::
+
+
+date_1  ->  {AnyWord%TERM}[*22.01.2013] ::
+    Ok: wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22.01.2013] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+date  ->  date_1[*22.01.2013] ::
+
+
+date_res  ->  date[*22.01.2013] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*две] ::
+
+
+{Word%TERM}  ->  Word[*две] ::
+
+
+date_1  ->  {AnyWord%TERM}[*две] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*две] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*две] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*тысячи] ::
+
+
+{Word%TERM}  ->  Word[*тысячи] ::
+
+
+{Word%TERM}  ->  Word[*тысячи] ::
+
+
+date_1  ->  {AnyWord%TERM}[*тысячи] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*тысячи] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*тысячи] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*тысячи] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@+}[*две]  {Word%TERM@}[тысячи] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*восьмой] ::
+
+
+{Word%TERM}  ->  Word[*восьмой] ::
+
+
+{Word%TERM}  ->  Word[*восьмой] ::
+
+
+date_1  ->  {AnyWord%TERM}[*восьмой] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*восьмой] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*восьмой] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*восьмой] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@+}[*тысячи]  {Word%TERM@}[восьмой] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@+}[*две тысячи]  {Word%TERM@}[восьмой] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*год] ::
+
+
+{Word%TERM}  ->  Word[*год] ::
+
+
+Descr  ->  год[*год] ::
+
+
+Descr  ->  год[*год] ::
+
+
+{Word%TERM}  ->  Word[*год] ::
+
+
+date_1  ->  {AnyWord%TERM}[*год] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+Year  ->  {AnyWord%TERM}[*восьмой]  Descr[год] ::
+>> FAILED:
+        wfm[0]=/^[1-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+Year  ->  {Word%TERM@+}[*восьмой]  Descr[год] ::
+    Ok: GU(0)=&[ANUM]GU(0)=&[NUM]
+
+
+Year  ->  {Word%TERM@+}[*тысячи восьмой]  Descr[год] ::
+    Ok: GU(0)=&[ANUM]GU(0)=&[NUM]
+
+
+Year  ->  {Word%TERM@+}[*две тысячи восьмой]  Descr[год] ::
+    Ok: GU(0)=&[ANUM]GU(0)=&[NUM]
+
+
+date_2  ->  Year[*восьмой год] ::
+
+
+date_2  ->  Year[*тысячи восьмой год] ::
+
+
+date_2  ->  Year[*две тысячи восьмой год] ::
+
+
+date  ->  date_2[*восьмой год] ::
+
+
+date  ->  date_2[*тысячи восьмой год] ::
+
+
+date  ->  date_2[*две тысячи восьмой год] ::
+
+
+date_res  ->  date[*восьмой год] ::
+
+
+date_res  ->  date[*тысячи восьмой год] ::
+
+
+date_res  ->  date[*две тысячи восьмой год] ::
+
+
+********************************** finished gram_date.cxx **********************************
+
+{Word%TERM}  ->  Word[*22_января_2017_года] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*22_января_2017_года] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22_января_2017_года] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*22_января_2017_года] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*22_января_2017_года] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*22_января_2017_года] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*22_января_2017_года] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*22_января] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*22_января] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22_января] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*22_января] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*22_января] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*22_января] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*22_января] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*январь_2017_года] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*январь_2017_года] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*январь_2017_года] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*январь_2017_года] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*январь_2017_года] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*январь_2017_года] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*январь_2017_года] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*2019_г] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*2019_г] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*2019_г] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*2019_г] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*2019_г] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*2019_г] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*2019_г] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*22.01.2013] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*22.01.2013] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22.01.2013] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*22.01.2013] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*22.01.2013] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*22.01.2013] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*22.01.2013] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*две_тысячи_восьмой_год] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*две_тысячи_восьмой_год] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*две_тысячи_восьмой_год] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*две_тысячи_восьмой_год] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*две_тысячи_восьмой_год] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+********************************** finished gram_time.cxx **********************************
+
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+{AnyWord%TERM}  ->  AnyWord[*десять] ::
+
+
+{Word%TERM}  ->  Word[*десять] ::
+
+
+date_1  ->  {AnyWord%TERM}[*десять] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*десять] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*десять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*часов] ::
+
+
+{Word%TERM}  ->  Word[*часов] ::
+
+
+{Word%TERM}  ->  Word[*часов] ::
+
+
+date_1  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*вечера] ::
+
+
+{Word%TERM}  ->  Word[*вечера] ::
+
+
+date_1  ->  {AnyWord%TERM}[*вечера] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*вечера] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*девять] ::
+
+
+{Word%TERM}  ->  Word[*девять] ::
+
+
+date_1  ->  {AnyWord%TERM}[*девять] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*девять] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*девять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+date_1  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*12:00] ::
+
+
+date_1  ->  {AnyWord%TERM}[*12:00] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+********************************** finished gram_date.cxx **********************************
+
+{Word%TERM}  ->  Word[*десять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*десять] ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*десять]<kwt=time_> ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*десять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*десять] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*десять] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*десять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*десять] ::
+    Ok: grams(0)=NUM, nom 
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*десять] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*десять] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*десять] ::
+
+
+{AnyWord%TERM@@+}  ->  {AnyWord%TERM@@}[*десять] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*десять] ::
+
+
+time_0  ->  {Word%TERM@@+}[*десять] ::
+
+
+time  ->  time_0[*десять] ::
+
+
+time_res  ->  time[*десять] ::
+
+
+{Word%TERM}  ->  Word[*часов] ::
+
+
+{Word%TERM}  ->  Word[*часов] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*часов] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*часов] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*часов] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*часов] ::
+
+
+{Word%TERM,kw=hour}  ->  Word[*часов]<kwt=hour> ::
+
+
+time_0  ->  {AnyWord%TERM}[*десять]  Word[часов]<kwt=hour> ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]$/
+
+
+time_0  ->  {Word%TERM@+}[*десять]  Word[часов] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+{Word%TERM}  ->  Word[*часов] ::
+
+
+time_0  ->  {AnyWord%TERM@+}[*десять]  Word[часов] ::
+    Ok: kwset(1)=[hour ] 
+
+
+{Word%TERM}  ->  Word[*часов] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  Word[*десять]  {Word%TERM,kw=hour}[часов] ::
+>> FAILED:
+        wfm[0]=/^[^0-2][^0-9]$/GU(0)=~[NUM]GU(0)=~[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time  ->  time_0[*десять часов] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_res  ->  time[*десять часов] ::
+
+
+{Word%TERM}  ->  Word[*вечера] ::
+
+
+{Word%TERM}  ->  Word[*вечера] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*вечера] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*вечера] ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*вечера]<kwt=exact2> ::
+
+
+time_2  ->  {Word%TERM}[*часов]  вечер[вечера] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*вечера] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*вечера] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*вечера] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*вечера] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*вечера] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*вечера] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*вечера] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*вечера] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*вечера] ::
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*вечера] ::
+
+
+time  ->  time_0[*вечера] ::
+
+
+time_00  ->  time_0[*десять часов]  time_0[вечера] ::
+
+
+time_res  ->  time[*вечера] ::
+
+
+time_0  ->  time_00[*десять часов вечера] ::
+
+
+time  ->  time_0[*десять часов вечера] ::
+
+
+time_res  ->  time[*десять часов вечера] ::
+
+
+{Word%TERM}  ->  Word[*девять] ::
+
+
+{Word%TERM}  ->  Word[*девять] ::
+
+
+{Word%TERM}  ->  Word[*девять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*девять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*девять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*девять] ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*девять]<kwt=time_> ::
+
+
+{Word%TERM}  ->  Word[*девять] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*девять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*девять] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*девять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*девять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*девять] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*девять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*девять] ::
+    Ok: grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*девять] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*девять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*девять] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*девять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*девять] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+time_2  ->  вечер[*вечера]  {Word%TERM}[девять] ::
+>> FAILED:
+        kwset(1)=[time_Day1 ] wfm[1]=/^[п][о][л].*$/
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*девять] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*девять] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*девять] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*девять] ::
+
+
+{AnyWord%TERM@@+}  ->  {AnyWord%TERM@@}[*девять] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*девять] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*девять] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*девять] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*девять] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*девять] ::
+
+
+time_0  ->  {Word%TERM@@+}[*девять] ::
+
+
+time_0  ->  {Word%TERM@@+}[*девять] ::
+
+
+time_0  ->  {Word%TERM@@+}[*девять] ::
+
+
+time  ->  time_0[*девять] ::
+
+
+time_00  ->  time_0[*вечера]  time_0[девять] ::
+
+
+time_00  ->  time_0[*десять часов вечера]  time_0[девять] ::
+
+
+time_00  ->  time_0[*вечера]  time_0[девять] ::
+
+
+time_res  ->  time[*девять] ::
+
+
+time_0  ->  time_00[*вечера девять] ::
+
+
+time_0  ->  time_00[*десять часов вечера девять] ::
+
+
+time_0  ->  time_00[*вечера девять] ::
+
+
+time  ->  time_0[*вечера девять] ::
+
+
+time  ->  time_0[*десять часов вечера девять] ::
+
+
+time_00  ->  time_0[*десять часов]  time_0[вечера девять] ::
+
+
+time_res  ->  time[*вечера девять] ::
+
+
+time_res  ->  time[*десять часов вечера девять] ::
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> ::
+
+
+time_2  ->  {Word%TERM}[*девять]  утро[утра] ::
+>> FAILED:
+        kwset(0)=[hour time_Night1 ] 
+
+
+time_0  ->  {Word%TERM@+}[*девять]  Word[утра] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+time_0  ->  {Word%TERM@+}[*девять]  Word[утра] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+time_0  ->  {Word%TERM@+}[*девять]  Word[утра] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+time_0  ->  {AnyWord%TERM@+}[*девять]  Word[утра] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+time_0  ->  {AnyWord%TERM@+}[*девять]  Word[утра] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+time_0  ->  {AnyWord%TERM@+}[*девять]  Word[утра] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*утра] ::
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*утра] ::
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*утра] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time  ->  time_0[*утра] ::
+
+
+time_00  ->  time_0[*девять]  time_0[утра] ::
+
+
+time_00  ->  time_0[*вечера девять]  time_0[утра] ::
+
+
+time_00  ->  time_0[*десять часов вечера девять]  time_0[утра] ::
+
+
+time_00  ->  time_0[*девять]  time_0[утра] ::
+
+
+time_00  ->  time_0[*девять]  time_0[утра] ::
+
+
+time_00  ->  time_0[*вечера девять]  time_0[утра] ::
+
+
+time_res  ->  time[*утра] ::
+
+
+time_0  ->  time_00[*девять утра] ::
+
+
+time_0  ->  time_00[*вечера девять утра] ::
+
+
+time_0  ->  time_00[*десять часов вечера девять утра] ::
+
+
+time_0  ->  time_00[*девять утра] ::
+
+
+time_0  ->  time_00[*девять утра] ::
+
+
+time_0  ->  time_00[*вечера девять утра] ::
+
+
+time  ->  time_0[*девять утра] ::
+
+
+time  ->  time_0[*вечера девять утра] ::
+
+
+time  ->  time_0[*десять часов вечера девять утра] ::
+
+
+time_00  ->  time_0[*вечера]  time_0[девять утра] ::
+
+
+time_00  ->  time_0[*десять часов вечера]  time_0[девять утра] ::
+
+
+time_00  ->  time_0[*вечера]  time_0[девять утра] ::
+
+
+time_00  ->  time_0[*десять часов]  time_0[вечера девять утра] ::
+
+
+time_res  ->  time[*девять утра] ::
+
+
+time_res  ->  time[*вечера девять утра] ::
+
+
+time_res  ->  time[*десять часов вечера девять утра] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*12:00] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*12:00] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*12:00] ::
+
+
+time_0  ->  {AnyWord%TERM}[*12:00] ::
+    Ok: wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+time_0  ->  {AnyWord%TERM}[*12:00] ::
+    Ok: wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+time_0  ->  {AnyWord%TERM}[*12:00] ::
+    Ok: wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+time  ->  time_0[*12:00] ::
+
+
+time_00  ->  time_0[*утра]  time_0[12:00] ::
+
+
+time_00  ->  time_0[*девять утра]  time_0[12:00] ::
+
+
+time_00  ->  time_0[*вечера девять утра]  time_0[12:00] ::
+
+
+time_00  ->  time_0[*десять часов вечера девять утра]  time_0[12:00] ::
+
+
+time_00  ->  time_0[*утра]  time_0[12:00] ::
+
+
+time_00  ->  time_0[*утра]  time_0[12:00] ::
+
+
+time_00  ->  time_0[*девять утра]  time_0[12:00] ::
+
+
+time_00  ->  time_0[*девять утра]  time_0[12:00] ::
+
+
+time_00  ->  time_0[*вечера девять утра]  time_0[12:00] ::
+
+
+time_res  ->  time[*12:00] ::
+
+
+time_0  ->  time_00[*утра 12:00] ::
+
+
+time_0  ->  time_00[*девять утра 12:00] ::
+
+
+time_0  ->  time_00[*вечера девять утра 12:00] ::
+
+
+time_0  ->  time_00[*десять часов вечера девять утра 12:00] ::
+
+
+time_0  ->  time_00[*утра 12:00] ::
+
+
+time_0  ->  time_00[*утра 12:00] ::
+
+
+time_0  ->  time_00[*девять утра 12:00] ::
+
+
+time_0  ->  time_00[*девять утра 12:00] ::
+
+
+time_0  ->  time_00[*вечера девять утра 12:00] ::
+
+
+time  ->  time_0[*утра 12:00] ::
+
+
+time  ->  time_0[*девять утра 12:00] ::
+
+
+time  ->  time_0[*вечера девять утра 12:00] ::
+
+
+time  ->  time_0[*десять часов вечера девять утра 12:00] ::
+
+
+time_00  ->  time_0[*девять]  time_0[утра 12:00] ::
+
+
+time_00  ->  time_0[*вечера девять]  time_0[утра 12:00] ::
+
+
+time_00  ->  time_0[*десять часов вечера девять]  time_0[утра 12:00] ::
+
+
+time_00  ->  time_0[*девять]  time_0[утра 12:00] ::
+
+
+time_00  ->  time_0[*девять]  time_0[утра 12:00] ::
+
+
+time_00  ->  time_0[*вечера девять]  time_0[утра 12:00] ::
+
+
+time_00  ->  time_0[*вечера]  time_0[девять утра 12:00] ::
+
+
+time_00  ->  time_0[*десять часов вечера]  time_0[девять утра 12:00] ::
+
+
+time_00  ->  time_0[*вечера]  time_0[девять утра 12:00] ::
+
+
+time_00  ->  time_0[*десять часов]  time_0[вечера девять утра 12:00] ::
+
+
+time_res  ->  time[*утра 12:00] ::
+
+
+time_res  ->  time[*девять утра 12:00] ::
+
+
+time_res  ->  time[*вечера девять утра 12:00] ::
+
+
+time_res  ->  time[*десять часов вечера девять утра 12:00] ::
+
+
+********************************** finished gram_time.cxx **********************************
+
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+date_1  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+date_1  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+date_1  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+date_1  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*полчетвертого] ::
+
+
+{Word%TERM}  ->  Word[*полчетвертого] ::
+
+
+date_1  ->  {AnyWord%TERM}[*полчетвертого] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*полчетвертого] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+date_1  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+date_1  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*без] ::
+
+
+{Word%TERM}  ->  Word[*без] ::
+
+
+date_1  ->  {AnyWord%TERM}[*без] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*без] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятнадцати] ::
+
+
+{Word%TERM}  ->  Word[*пятнадцати] ::
+
+
+date_1  ->  {AnyWord%TERM}[*пятнадцати] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятнадцати] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятнадцати] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пять] ::
+
+
+{Word%TERM}  ->  Word[*пять] ::
+
+
+{Word%TERM}  ->  Word[*пять] ::
+
+
+date_1  ->  {AnyWord%TERM}[*пять] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пять] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пять] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пять] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@+}[*пятнадцати]  {Word%TERM@}[пять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+date_1  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*половину] ::
+
+
+{Word%TERM}  ->  Word[*половину] ::
+
+
+date_1  ->  {AnyWord%TERM}[*половину] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*половину] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятого] ::
+
+
+{Word%TERM}  ->  Word[*пятого] ::
+
+
+date_1  ->  {AnyWord%TERM}[*пятого] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятого] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятого] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+date_1  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+date_1  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*десять] ::
+
+
+{Word%TERM}  ->  Word[*десять] ::
+
+
+date_1  ->  {AnyWord%TERM}[*десять] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*десять] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*десять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*минут] ::
+
+
+{Word%TERM}  ->  Word[*минут] ::
+
+
+{Word%TERM}  ->  Word[*минут] ::
+
+
+date_1  ->  {AnyWord%TERM}[*минут] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*минут] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*минут] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*восьмого] ::
+
+
+{Word%TERM}  ->  Word[*восьмого] ::
+
+
+date_1  ->  {AnyWord%TERM}[*восьмого] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*восьмого] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*восьмого] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+date_1  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+date_1  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+********************************** finished gram_date.cxx **********************************
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*полчетвертого] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*полчетвертого] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*полчетвертого] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*полчетвертого] ::
+    Ok: kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*полчетвертого] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*полчетвертого] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*полчетвертого] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time  ->  time_2[*полчетвертого] ::
+
+
+time_res  ->  time[*полчетвертого] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*без] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*без] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*без] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*без] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*без] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*без] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*без] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*пятнадцати] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятнадцати] ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> ::
+
+
+{Word%TERM,kw=part}  ->  Word[*пятнадцати]<kwt=part> ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятнадцати] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*пятнадцати] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*пятнадцати] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*пятнадцати] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*пятнадцати] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятнадцати] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*пятнадцати] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пятнадцати] ::
+
+
+time  ->  time_0[*пятнадцати] ::
+
+
+time_res  ->  time[*пятнадцати] ::
+
+
+{Word%TERM}  ->  Word[*пять] ::
+
+
+{Word%TERM}  ->  Word[*пять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пять] ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*пять]<kwt=time_> ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*пять]<kwt=time_> ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*пять]<kwt=time_> ::
+
+
+{Word%TERM}  ->  Word[*пять] ::
+
+
+{Word%TERM}  ->  Word[*пять] ::
+
+
+time_0  ->  {Word%TERM@+}[*пятнадцати]  Word[пять] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+{Word%TERM}  ->  Word[*пять] ::
+
+
+time_0  ->  {AnyWord%TERM@+}[*пятнадцати]  Word[пять] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*пять] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*пять] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*пять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*пять] ::
+    Ok: grams(0)=NUM, nom 
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*пять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*пять] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*пять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пять] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пять] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пять] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+time_3  ->  Word[*без]<kwt=after_half>  {Word%TERM,kw=part}[пятнадцати]  {Word%TERM}[пять] ::
+    Ok: kwset(2)=[hour time_Day2 ] 
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пять] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пять] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*пять] ::
+
+
+{AnyWord%TERM@@+}  ->  {AnyWord%TERM@@}[*пять] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@+}[*пятнадцати]  {AnyWord%TERM@}[пять] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*пять] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*пять] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@+}[*пятнадцати]  {Word%TERM@@}[пять] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*пять] ::
+
+
+time  ->  time_3[*без пятнадцати пять] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пять] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@+}[*пятнадцати]  {Word%TERM@}[пять] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пять] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пятнадцати пять] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пять] ::
+
+
+time_res  ->  time[*без пятнадцати пять] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пятнадцати]  {Word%TERM@+}[пять] ::
+    Ok: kwset(1)~=[дата ] GU(1)=&[NUM]GU(1)=&[ANUM]
+
+
+time  ->  time_0[*пять] ::
+
+
+time  ->  time_0[*пятнадцати пять] ::
+
+
+time_00  ->  time_0[*пятнадцати]  time_0[пять] ::
+
+
+time  ->  time_0[*пятнадцати пять] ::
+
+
+time_res  ->  time[*пять] ::
+
+
+time_res  ->  time[*пятнадцати пять] ::
+
+
+time_0  ->  time_00[*пятнадцати пять] ::
+
+
+time_res  ->  time[*пятнадцати пять] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+time_0  ->  {Word%TERM@+}[*пять]  Word[в] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+time_0  ->  {Word%TERM@+}[*пять]  Word[в] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+time_0  ->  {Word%TERM@+}[*пятнадцати пять]  Word[в] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+time_0  ->  {AnyWord%TERM@+}[*пять]  Word[в] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+time_0  ->  {AnyWord%TERM@+}[*пятнадцати пять]  Word[в] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+time_0  ->  {AnyWord%TERM@+}[*пять]  Word[в] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM}  ->  Word[*половину] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*половину] ::
+
+
+{Word%TERM,kw=half}  ->  Word[*половину]<kwt=half> ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*половину] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*половину] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*половину] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*половину] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*половину] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*пятого] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятого] ::
+
+
+{Word%TERM,kw=time_Day1}  ->  Word[*пятого]<kwt=time_Day1> ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятого] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*пятого] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*пятого] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*пятого] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*пятого] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_2  ->  {Word%TERM,kw=half}[*половину]  {Word%TERM,kw=time_Day1}[пятого] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятого] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*пятого] ::
+
+
+time  ->  time_2[*половину пятого] ::
+
+
+time_res  ->  time[*половину пятого] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+time_0  ->  {Word%TERM@+}[*пятого]  Word[русский] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+time_0  ->  {AnyWord%TERM@+}[*пятого]  Word[русский] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*десять] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*десять] ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*десять]<kwt=time_> ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*десять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*десять] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*десять] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*десять] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*десять] ::
+    Ok: grams(0)=NUM, nom 
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*десять] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*десять] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*десять] ::
+
+
+{AnyWord%TERM@@+}  ->  {AnyWord%TERM@@}[*десять] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*десять] ::
+
+
+time_0  ->  {Word%TERM@@+}[*десять] ::
+
+
+time  ->  time_0[*десять] ::
+
+
+time_res  ->  time[*десять] ::
+
+
+{Word%TERM}  ->  Word[*минут] ::
+
+
+{Word%TERM}  ->  Word[*минут] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*минут] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*минут] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*минут] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*минут] ::
+
+
+{Word%TERM,kw=minute}  ->  Word[*минут]<kwt=minute> ::
+
+
+time_0  ->  {AnyWord%TERM}[*десять]  Word[минут]<kwt=minute> ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]$/
+
+
+time_0  ->  {Word%TERM@+}[*десять]  Word[минут] ::
+    Ok: kwset(1)=[minute ] 
+
+
+{Word%TERM}  ->  Word[*минут] ::
+
+
+time_0  ->  {AnyWord%TERM@+}[*десять]  Word[минут] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+{Word%TERM}  ->  Word[*минут] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*минут] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*минут] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*минут] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*минут] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*минут] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*минут] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*минут] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*минут] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*минут] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*минут] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  Word[*десять]  {Word%TERM,kw=minute}[минут] ::
+>> FAILED:
+        wfm[0]=/^[^0-2][^0-9]$/GU(0)=~[NUM]GU(0)=~[ANUM]
+
+
+time  ->  time_0[*десять минут] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*минут] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*минут] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_res  ->  time[*десять минут] ::
+
+
+{Word%TERM}  ->  Word[*восьмого] ::
+
+
+{Word%TERM}  ->  Word[*восьмого] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*восьмого] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*восьмого] ::
+
+
+{Word%TERM,kw=time_Day2}  ->  Word[*восьмого]<kwt=time_Day2> ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*восьмого] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*восьмого] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*восьмого] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*восьмого] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*восьмого] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*восьмого] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*восьмого] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*восьмого] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@@@}  ->  {Word%TERM,kw=time_Day2}[*восьмого] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*восьмого] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*восьмого] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*восьмого] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*восьмого] ::
+
+
+{Word%TERM@@@+}  ->  {Word%TERM@@@}[*восьмого] ::
+
+
+time_1  ->  {AnyWord%TERM@@+}[*десять]  минута[минут]  {Word%TERM@@@+}[восьмого] ::
+
+
+time  ->  time_1[*десять минут восьмого] ::
+
+
+time_res  ->  time[*десять минут восьмого] ::
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*русский] ::
+
+
+time_0  ->  {Word%TERM@+}[*восьмого]  Word[русский] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+time_0  ->  {Word%TERM@+}[*восьмого]  Word[русский] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+{Word%TERM}  ->  Word[*русский] ::
+
+
+time_0  ->  {AnyWord%TERM@+}[*восьмого]  Word[русский] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+time_0  ->  {AnyWord%TERM@+}[*восьмого]  Word[русский] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*русский] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM}  ->  Word[*текст] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*текст] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*текст] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*текст] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+********************************** finished gram_time.cxx **********************************
+
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*промежутки] ::
+
+
+{Word%TERM}  ->  Word[*промежутки] ::
+
+
+date_1  ->  {AnyWord%TERM}[*промежутки] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*промежутки] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*времени] ::
+
+
+{Word%TERM}  ->  Word[*времени] ::
+
+
+date_1  ->  {AnyWord%TERM}[*времени] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+********************************** finished gram_date.cxx **********************************
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*промежутки] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*промежутки] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*промежутки] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*промежутки] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*промежутки] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*промежутки] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*промежутки] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*времени] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*времени] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*времени] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*времени] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*времени] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+********************************** finished gram_time.cxx **********************************
+
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+{AnyWord%TERM}  ->  AnyWord[*между] ::
+
+
+{Word%TERM}  ->  Word[*между] ::
+
+
+date_1  ->  {AnyWord%TERM}[*между] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*между] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*10] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*10] ::
+
+
+{Word%TERM}  ->  Word[*10] ::
+
+
+{Word%TERM}  ->  Word[*10] ::
+
+
+date_1  ->  {AnyWord%TERM}[*10] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date_1  ->  {AnyWord%TERM}[*10] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*10] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*10] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*и] ::
+
+
+{Word%TERM}  ->  Word[*и] ::
+
+
+date_1  ->  {AnyWord%TERM}[*и] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*и] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*11] ::
+
+
+{Word%TERM}  ->  Word[*11] ::
+
+
+date_1  ->  {AnyWord%TERM}[*11] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*11] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+date_1  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*с] ::
+
+
+{Word%TERM}  ->  Word[*с] ::
+
+
+date_1  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Num  ->  AnyWord[*25] ::
+    Ok: wfm[0]=/^[1-3][0-9]$/
+        wfm[0]=/^[1-9]$/
+
+
+Num  ->  AnyWord[*25] ::
+    Ok: wfm[0]=/^[1-3][0-9]$/
+        wfm[0]=/^[1-9]$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*25] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*25] ::
+
+
+{Word%TERM}  ->  Word[*25] ::
+
+
+{Word%TERM}  ->  Word[*25] ::
+
+
+date_1  ->  {AnyWord%TERM}[*25] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date_1  ->  {AnyWord%TERM}[*25] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*25] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*25] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*янв] ::
+
+
+{Word%TERM}  ->  Word[*янв] ::
+
+
+{Word%TERM,kw=dates}  ->  Word[*янв]<kwt=dates> ::
+
+
+{Word%TERM,kw=dates}  ->  Word[*янв]<kwt=dates> ::
+
+
+date_1  ->  {AnyWord%TERM}[*янв] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*янв] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Mounth  ->  {Word%TERM,kw=dates}[*янв] ::
+
+
+Mounth  ->  {Word%TERM,kw=dates}[*янв] ::
+
+
+date_2  ->  Mounth[*янв] ::
+
+
+date_2  ->  Num[*25]  Mounth[янв] ::
+
+
+date_2  ->  Num[*25]  Mounth[янв] ::
+
+
+date  ->  date_2[*янв] ::
+
+
+date  ->  date_2[*25 янв] ::
+
+
+date  ->  date_2[*25 янв] ::
+
+
+date_res  ->  date[*янв] ::
+
+
+date_res  ->  date[*25 янв] ::
+
+
+date_op  ->  AnyWord[*с]<kwt=open>  date[25 янв] ::
+
+
+date_res  ->  date_op[*с 25 янв] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*до] ::
+
+
+{Word%TERM}  ->  Word[*до] ::
+
+
+{Word%TERM}  ->  Word[*до] ::
+
+
+{Word%TERM}  ->  Word[*до] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*до] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*до] ::
+
+
+date_1  ->  {AnyWord%TERM}[*до] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*до] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*до] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*до] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Num  ->  AnyWord[*30] ::
+    Ok: wfm[0]=/^[1-3][0-9]$/
+        wfm[0]=/^[1-9]$/
+
+
+Num  ->  AnyWord[*30] ::
+    Ok: wfm[0]=/^[1-3][0-9]$/
+        wfm[0]=/^[1-9]$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*30] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*30] ::
+
+
+{Word%TERM}  ->  Word[*30] ::
+
+
+{Word%TERM}  ->  Word[*30] ::
+
+
+date_1  ->  {AnyWord%TERM}[*30] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date_1  ->  {AnyWord%TERM}[*30] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*30] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*30] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*фев] ::
+
+
+{Word%TERM}  ->  Word[*фев] ::
+
+
+{Word%TERM,kw=dates}  ->  Word[*фев]<kwt=dates> ::
+
+
+{Word%TERM,kw=dates}  ->  Word[*фев]<kwt=dates> ::
+
+
+date_1  ->  {AnyWord%TERM}[*фев] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*фев] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+Mounth  ->  {Word%TERM,kw=dates}[*фев] ::
+
+
+Mounth  ->  {Word%TERM,kw=dates}[*фев] ::
+
+
+date_2  ->  Mounth[*фев] ::
+
+
+date_2  ->  Num[*30]  Mounth[фев] ::
+
+
+date_2  ->  Num[*30]  Mounth[фев] ::
+
+
+date  ->  date_2[*фев] ::
+
+
+date  ->  date_2[*30 фев] ::
+
+
+date  ->  date_2[*30 фев] ::
+
+
+date_res  ->  date[*фев] ::
+
+
+date_res  ->  date[*30 фев] ::
+
+
+date_cl  ->  AnyWord[*до]<kwt=close>  date[30 фев] ::
+
+
+date_cl  ->  AnyWord[*до]<kwt=close>  date[30 фев] ::
+
+
+date_res  ->  date_cl[*до 30 фев] ::
+
+
+date_res  ->  date_op[*с 25 янв]  date_cl[до 30 фев] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+date_1  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*обед] ::
+
+
+{Word%TERM}  ->  Word[*обед] ::
+
+
+date_1  ->  {AnyWord%TERM}[*обед] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*обед] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*после] ::
+
+
+{Word%TERM}  ->  Word[*после] ::
+
+
+date_1  ->  {AnyWord%TERM}[*после] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*после] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*обеда] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*обеда] ::
+
+
+{Word%TERM}  ->  Word[*обеда] ::
+
+
+{Word%TERM}  ->  Word[*обеда] ::
+
+
+date_1  ->  {AnyWord%TERM}[*обеда] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date_1  ->  {AnyWord%TERM}[*обеда] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*обеда] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*обеда] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*с] ::
+
+
+{Word%TERM}  ->  Word[*с] ::
+
+
+date_1  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*22] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*22] ::
+
+
+{Word%TERM}  ->  Word[*22] ::
+
+
+{Word%TERM}  ->  Word[*22] ::
+
+
+date_1  ->  {AnyWord%TERM}[*22] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date_1  ->  {AnyWord%TERM}[*22] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*часов] ::
+
+
+{Word%TERM}  ->  Word[*часов] ::
+
+
+date_1  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*или] ::
+
+
+{Word%TERM}  ->  Word[*или] ::
+
+
+date_1  ->  {AnyWord%TERM}[*или] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*или] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*с] ::
+
+
+{Word%TERM}  ->  Word[*с] ::
+
+
+date_1  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятнадцати] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятнадцати] ::
+
+
+{Word%TERM}  ->  Word[*пятнадцати] ::
+
+
+{Word%TERM}  ->  Word[*пятнадцати] ::
+
+
+date_1  ->  {AnyWord%TERM}[*пятнадцати] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date_1  ->  {AnyWord%TERM}[*пятнадцати] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятнадцати] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятнадцати] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятнадцати] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятнадцати] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*ноль] ::
+
+
+{Word%TERM}  ->  Word[*ноль] ::
+
+
+{Word%TERM}  ->  Word[*ноль] ::
+
+
+date_1  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*ноль] ::
+
+
+{Word%TERM}  ->  Word[*ноль] ::
+
+
+date_1  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+********************************** finished gram_date.cxx **********************************
+
+{Word%TERM}  ->  Word[*между] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*между] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*между] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*между] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*между] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*между] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*между] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*10] ::
+
+
+{Word%TERM}  ->  Word[*10] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*10] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*10] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*10] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*10] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*10] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*10] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*10] ::
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+    Ok: kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*10] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*10] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*10] ::
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+    Ok: kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*10] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*10] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time  ->  time_0[*10] ::
+
+
+time  ->  time_0[*10] ::
+
+
+time_res  ->  time[*10] ::
+
+
+{Word%TERM}  ->  Word[*и] ::
+
+
+{Word%TERM}  ->  Word[*и] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*и] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*и] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*и] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*и] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*и] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*и] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*и] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*и] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*и] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*и] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM}  ->  Word[*11] ::
+
+
+{Word%TERM}  ->  Word[*11] ::
+
+
+{Word%TERM}  ->  Word[*11] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*11] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*11] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*11] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*11] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*11] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*11] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*11] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*11] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*11] ::
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+    Ok: kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*11] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*11] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*11] ::
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+    Ok: kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*11] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*11] ::
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+    Ok: kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*11] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*11] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time  ->  time_0[*11] ::
+
+
+time_00  ->  time_0[*10]  SimConjAnd[и]  time_0[11] ::
+
+
+time_00  ->  time_0[*10]  SimConjAnd[и]  time_0[11] ::
+
+
+time  ->  time_0[*11] ::
+
+
+time_res  ->  time[*11] ::
+
+
+time_0  ->  time_00[*10 и 11] ::
+
+
+time_0  ->  time_00[*10 и 11] ::
+
+
+time_str  ->  Word[*между]<kwt=str>  time[10]  SimConjAnd[и]  time[11] ::
+
+
+time  ->  time_0[*10 и 11] ::
+
+
+time  ->  time_0[*10 и 11] ::
+
+
+time_res  ->  time_str[*между 10 и 11] ::
+
+
+time_res  ->  time[*10 и 11] ::
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+{Word%TERM}  ->  Word[*утра] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*утра] ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*утра]<kwt=exact2> ::
+
+
+time_2  ->  {Word%TERM}[*11]  утро[утра] ::
+>> FAILED:
+        kwset(0)=[hour time_Night1 ] 
+
+
+time_2  ->  {Word%TERM}[*11]  утро[утра] ::
+>> FAILED:
+        kwset(0)=[hour time_Night1 ] 
+
+
+{Word%TERM@}  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*утра] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*утра] ::
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*утра] ::
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*утра] ::
+
+
+time  ->  time_0[*утра] ::
+
+
+time_00  ->  time_0[*11]  time_0[утра] ::
+
+
+time_00  ->  time_0[*11]  time_0[утра] ::
+
+
+time_00  ->  time_0[*10 и 11]  time_0[утра] ::
+
+
+time_00  ->  time_0[*10 и 11]  time_0[утра] ::
+
+
+time_00  ->  time_0[*11]  time_0[утра] ::
+
+
+time_res  ->  time[*утра] ::
+
+
+time_0  ->  time_00[*11 утра] ::
+
+
+time_0  ->  time_00[*11 утра] ::
+
+
+time_0  ->  time_00[*10 и 11 утра] ::
+
+
+time_0  ->  time_00[*10 и 11 утра] ::
+
+
+time_0  ->  time_00[*11 утра] ::
+
+
+time  ->  time_0[*11 утра] ::
+
+
+time  ->  time_0[*11 утра] ::
+
+
+time  ->  time_0[*10 и 11 утра] ::
+
+
+time  ->  time_0[*10 и 11 утра] ::
+
+
+time_00  ->  time_0[*10]  SimConjAnd[и]  time_0[11 утра] ::
+
+
+time_00  ->  time_0[*10]  SimConjAnd[и]  time_0[11 утра] ::
+
+
+time_res  ->  time[*11 утра] ::
+
+
+time_str  ->  Word[*между]<kwt=str>  time[10]  SimConjAnd[и]  time[11 утра] ::
+
+
+time_res  ->  time[*10 и 11 утра] ::
+
+
+time_res  ->  time_str[*между 10 и 11 утра] ::
+
+
+{Word%TERM}  ->  Word[*с_25_янв_до_30_фев] ::
+
+
+{Word%TERM}  ->  Word[*с_25_янв_до_30_фев] ::
+
+
+{Word%TERM}  ->  Word[*с_25_янв_до_30_фев] ::
+
+
+{Word%TERM}  ->  Word[*с_25_янв_до_30_фев] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*с_25_янв_до_30_фев] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*с_25_янв_до_30_фев] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*с_25_янв_до_30_фев] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*с_25_янв_до_30_фев] ::
+
+
+{Word%TERM}  ->  Word[*с_25_янв_до_30_фев] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  утро[*утра]  {Word%TERM}[с_25_янв_до_30_фев] ::
+>> FAILED:
+        kwset(1)=[hour time_Night1 ] 
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*обед] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*обед] ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*обед]<kwt=exact2> ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*обед] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*обед] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*обед] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*обед] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*обед] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*обед] ::
+
+
+time  ->  time_0[*обед] ::
+
+
+time_res  ->  time[*обед] ::
+
+
+{Word%TERM}  ->  Word[*после] ::
+
+
+{Word%TERM}  ->  Word[*после] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*после] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*после] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*после] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*после] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*после] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*после] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*после] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*после] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*после] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*после] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM}  ->  Word[*обеда] ::
+
+
+{Word%TERM}  ->  Word[*обеда] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*обеда] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*обеда] ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*обеда]<kwt=exact2> ::
+
+
+{Word%TERM,kw=exact2}  ->  Word[*обеда]<kwt=exact2> ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*обеда] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*обеда] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*обеда] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*обеда] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*обеда] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*обеда] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*обеда] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*обеда] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*обеда] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*обеда] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*обеда] ::
+
+
+time_0  ->  {Word%TERM,kw=exact2}[*обеда] ::
+
+
+time  ->  time_0[*обеда] ::
+
+
+time  ->  time_0[*обеда] ::
+
+
+time_res  ->  time[*обеда] ::
+
+
+time_op  ->  Word[*после]<kwt=open>  time[обеда] ::
+
+
+time_res  ->  time_op[*после обеда] ::
+
+
+{Word%TERM}  ->  Word[*с] ::
+
+
+{Word%TERM}  ->  Word[*с] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*с] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*с] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*с] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM}  ->  Word[*22] ::
+
+
+{Word%TERM}  ->  Word[*22] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*22] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*22] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*22] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*22] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*22] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*22] ::
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+    Ok: kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*22] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*22] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*22] ::
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+    Ok: kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*22] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*22] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time  ->  time_0[*22] ::
+
+
+time  ->  time_0[*22] ::
+
+
+time_res  ->  time[*22] ::
+
+
+time_op  ->  Word[*с]<kwt=open>  time[22] ::
+
+
+time_res  ->  time_op[*с 22] ::
+
+
+{Word%TERM}  ->  Word[*часов] ::
+
+
+{Word%TERM}  ->  Word[*часов] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*часов] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*часов] ::
+
+
+{Word%TERM,kw=hour}  ->  Word[*часов]<kwt=hour> ::
+
+
+time_0  ->  {AnyWord%TERM}[*22]  Word[часов]<kwt=hour> ::
+    Ok: wfm[0]=/^[0-2][0-9]$/
+
+
+time_0  ->  {AnyWord%TERM}[*22]  Word[часов]<kwt=hour> ::
+    Ok: wfm[0]=/^[0-2][0-9]$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*часов] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  Word[*22]  {Word%TERM,kw=hour}[часов] ::
+>> FAILED:
+        wfm[0]=/^[^0-2][^0-9]$/GU(0)=~[NUM]GU(0)=~[ANUM]
+
+
+time_0  ->  Word[*22]  {Word%TERM,kw=hour}[часов] ::
+>> FAILED:
+        wfm[0]=/^[^0-2][^0-9]$/GU(0)=~[NUM]GU(0)=~[ANUM]
+
+
+time  ->  time_0[*22 часов] ::
+
+
+time  ->  time_0[*22 часов] ::
+
+
+time_res  ->  time[*22 часов] ::
+
+
+time_op  ->  Word[*с]<kwt=open>  time[22 часов] ::
+
+
+time_res  ->  time_op[*с 22 часов] ::
+
+
+{Word%TERM}  ->  Word[*или] ::
+
+
+{Word%TERM}  ->  Word[*или] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*или] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*или] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*или] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*или] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*или] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*или] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*или] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*или] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*или] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*или] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM}  ->  Word[*с] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*с] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*с] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*с] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*с] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*пятнадцати] ::
+
+
+{Word%TERM}  ->  Word[*пятнадцати] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятнадцати] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятнадцати] ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> ::
+
+
+{Word%TERM,kw=time_}  ->  Word[*пятнадцати]<kwt=time_> ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятнадцати] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*пятнадцати] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятнадцати] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*пятнадцати] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*пятнадцати] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*пятнадцати] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*пятнадцати] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+time_0  ->  {AnyWord%TERM}[*пятнадцати] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*пятнадцати] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*пятнадцати] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+{Word%TERM@@}  ->  {Word%TERM,kw=time_}[*пятнадцати] ::
+    Ok: kwset(0)~=[дата ] 
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятнадцати] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятнадцати] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*пятнадцати] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*пятнадцати] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] ::
+
+
+{Word%TERM@@+}  ->  {Word%TERM@@}[*пятнадцати] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пятнадцати] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пятнадцати] ::
+
+
+time  ->  time_0[*пятнадцати] ::
+
+
+time  ->  time_0[*пятнадцати] ::
+
+
+time_res  ->  time[*пятнадцати] ::
+
+
+time_op  ->  Word[*с]<kwt=open>  time[пятнадцати] ::
+
+
+time_res  ->  time_op[*с пятнадцати] ::
+
+
+{Word%TERM}  ->  Word[*ноль] ::
+
+
+{Word%TERM}  ->  Word[*ноль] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*ноль] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*ноль] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*ноль] ::
+
+
+time_0  ->  {Word%TERM@+}[*пятнадцати]  Word[ноль] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+time_0  ->  {Word%TERM@+}[*пятнадцати]  Word[ноль] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+{Word%TERM}  ->  Word[*ноль] ::
+
+
+time_0  ->  {AnyWord%TERM@+}[*пятнадцати]  Word[ноль] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+time_0  ->  {AnyWord%TERM@+}[*пятнадцати]  Word[ноль] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+{Word%TERM}  ->  Word[*ноль] ::
+
+
+{ноль%LEMMA}  ->  ноль[*ноль] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{ноль%LEMMA+}  ->  {ноль%LEMMA}[*ноль] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пятнадцати]  {ноль%LEMMA+}[ноль] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пятнадцати]  {ноль%LEMMA+}[ноль] ::
+
+
+time  ->  time_0[*пятнадцати ноль] ::
+
+
+time  ->  time_0[*пятнадцати ноль] ::
+
+
+time_res  ->  time[*пятнадцати ноль] ::
+
+
+time_op  ->  Word[*с]<kwt=open>  time[пятнадцати ноль] ::
+
+
+time_res  ->  time_op[*с пятнадцати ноль] ::
+
+
+{Word%TERM}  ->  Word[*ноль] ::
+
+
+{Word%TERM}  ->  Word[*ноль] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*ноль] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*ноль] ::
+
+
+{ноль%LEMMA}  ->  ноль[*ноль] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*ноль] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_0  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+time_0  ->  {AnyWord%TERM}[*ноль] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{ноль%LEMMA+}  ->  {ноль%LEMMA+}[*ноль]  {ноль%LEMMA}[ноль] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пятнадцати]  {ноль%LEMMA+}[ноль ноль] ::
+
+
+time_0  ->  {Word%TERM@@+}[*пятнадцати]  {ноль%LEMMA+}[ноль ноль] ::
+
+
+time  ->  time_0[*пятнадцати ноль ноль] ::
+
+
+time  ->  time_0[*пятнадцати ноль ноль] ::
+
+
+time_res  ->  time[*пятнадцати ноль ноль] ::
+
+
+time_op  ->  Word[*с]<kwt=open>  time[пятнадцати ноль ноль] ::
+
+
+time_res  ->  time_op[*с пятнадцати ноль ноль] ::
+
+
+********************************** finished gram_time.cxx **********************************
+
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*относительное] ::
+
+
+{Word%TERM}  ->  Word[*относительное] ::
+
+
+date_1  ->  {AnyWord%TERM}[*относительное] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*относительное] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*время] ::
+
+
+{Word%TERM}  ->  Word[*время] ::
+
+
+date_1  ->  {AnyWord%TERM}[*время] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+********************************** finished gram_date.cxx **********************************
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*относительное] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*относительное] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*относительное] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*относительное] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*относительное] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*относительное] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*относительное] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*время] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*время] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*время] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*время] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*время] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+********************************** finished gram_time.cxx **********************************
+
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+{AnyWord%TERM}  ->  AnyWord[*через] ::
+
+
+{Word%TERM}  ->  Word[*через] ::
+
+
+{Word%TERM,kw=add}  ->  Word[*через]<kwt=add> ::
+
+
+date_1  ->  {AnyWord%TERM}[*через] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*через] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*два] ::
+
+
+{Word%TERM}  ->  Word[*два] ::
+
+
+{Word%TERM}  ->  Word[*два] ::
+
+
+date_1  ->  {AnyWord%TERM}[*два] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*два] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+date  ->  {Word%TERM,kw=add}[*через]  {Word%TERM}[два] ::
+>> FAILED:
+        kwset(1)=[word exact2 ] 
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*два] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*дня] ::
+
+
+{Word%TERM}  ->  Word[*дня] ::
+
+
+{Word%TERM}  ->  Word[*дня] ::
+
+
+{Word%TERM}  ->  Word[*дня] ::
+
+
+date_1  ->  {AnyWord%TERM}[*дня] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*дня] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+date  ->  {Word%TERM,kw=add}[*через]  {Word%TERM}[два]  {Word%TERM}[дня] ::
+    Ok: kwset(2)=[word exact2 ] GU(1)=&[ANUM]GU(1)=&[NUM]
+
+
+{Word%TERM@}  ->  {Word%TERM}[*дня] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+date_res  ->  date[*через два дня] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*через] ::
+
+
+{Word%TERM}  ->  Word[*через] ::
+
+
+{Word%TERM,kw=add}  ->  Word[*через]<kwt=add> ::
+
+
+date_1  ->  {AnyWord%TERM}[*через] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*через] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*месяц] ::
+
+
+{Word%TERM}  ->  Word[*месяц] ::
+
+
+{Word%TERM}  ->  Word[*месяц] ::
+
+
+date_1  ->  {AnyWord%TERM}[*месяц] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*месяц] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+date  ->  {Word%TERM,kw=add}[*через]  {Word%TERM}[месяц] ::
+    Ok: kwset(1)=[word exact2 ] 
+
+
+date_res  ->  date[*через месяц] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*на] ::
+
+
+{Word%TERM}  ->  Word[*на] ::
+
+
+{Word%TERM}  ->  Word[*на] ::
+
+
+date_1  ->  {AnyWord%TERM}[*на] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*на] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+date  ->  {Word%TERM,kw=add}[*через]  {Word%TERM}[месяц]  {Word%TERM}[на] ::
+>> FAILED:
+        kwset(2)=[word exact2 ] GU(1)=&[ANUM]GU(1)=&[NUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*следующей] ::
+
+
+{Word%TERM}  ->  Word[*следующей] ::
+
+
+{Word%TERM,kw=add}  ->  Word[*следующей]<kwt=add> ::
+
+
+date_1  ->  {AnyWord%TERM}[*следующей] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*следующей] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*неделе] ::
+
+
+{Word%TERM}  ->  Word[*неделе] ::
+
+
+{Word%TERM}  ->  Word[*неделе] ::
+
+
+date_1  ->  {AnyWord%TERM}[*неделе] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+date  ->  {Word%TERM,kw=add}[*следующей]  {Word%TERM}[неделе] ::
+    Ok: kwset(1)=[word exact2 ] 
+
+
+date_res  ->  date[*следующей неделе] ::
+
+
+********************************** finished gram_date.cxx **********************************
+
+{Word%TERM}  ->  Word[*через_два_дня] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*через_два_дня] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*через_два_дня] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*через_два_дня] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*через_два_дня] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*через_два_дня] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*через_два_дня] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*через_месяц] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*через_месяц] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*через_месяц] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*через_месяц] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*через_месяц] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*через_месяц] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*через_месяц] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*на] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*на] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*на] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*на] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*на] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*на] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*на] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*следующей_неделе] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*следующей_неделе] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*следующей_неделе] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*следующей_неделе] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*следующей_неделе] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+********************************** finished gram_time.cxx **********************************
+
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+date_1  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*ошибки] ::
+
+
+{Word%TERM}  ->  Word[*ошибки] ::
+
+
+date_1  ->  {AnyWord%TERM}[*ошибки] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+********************************** finished gram_date.cxx **********************************
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*/] ::
+
+
+time_0  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*/] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*ошибки] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*ошибки] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*ошибки] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*ошибки] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*ошибки] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+********************************** finished gram_time.cxx **********************************
+
+
+
+========================================== processing gram_time.cxx ==========================================
+
+
+
+========================================== processing gram_date.cxx ==========================================
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+date_1  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*34:13] ::
+
+
+date_1  ->  {AnyWord%TERM}[*34:13] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{AnyWord%TERM}  ->  AnyWord[*без] ::
+
+
+{Word%TERM}  ->  Word[*без] ::
+
+
+date_1  ->  {AnyWord%TERM}[*без] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*без] ::
+>> FAILED:
+        GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятидесяти] ::
+
+
+{Word%TERM}  ->  Word[*пятидесяти] ::
+
+
+date_1  ->  {AnyWord%TERM}[*пятидесяти] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятидесяти] ::
+    Ok: GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятидесяти] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*сорок] ::
+
+
+{Word%TERM}  ->  Word[*сорок] ::
+
+
+{Word%TERM}  ->  Word[*сорок] ::
+
+
+date_1  ->  {AnyWord%TERM}[*сорок] ::
+>> FAILED:
+        wfm[0]=/^[0-3]?[0-9]?\.[0-2]?[0-9]?\.[0-9]?[0-9]?[0-9]?[0-9]?$/
+
+
+********************************** finished gram_date.cxx **********************************
+
+{Word%TERM}  ->  Word[*в] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*в] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*в] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*в] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{AnyWord%TERM}  ->  AnyWord[*34:13] ::
+
+
+time_0  ->  {AnyWord%TERM}[*34:13] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*34:13] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*34:13] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*без] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*без] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*без] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*без] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*без] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*без] ::
+>> FAILED:
+        kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*без] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM}  ->  Word[*пятидесяти] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*пятидесяти] ::
+
+
+{Word%TERM@}  ->  {Word%TERM}[*пятидесяти] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*пятидесяти] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*пятидесяти] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{AnyWord%TERM@}  ->  {AnyWord%TERM}[*пятидесяти] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{AnyWord%TERM@@}  ->  {AnyWord%TERM}[*пятидесяти] ::
+>> FAILED:
+        grams(0)=NUM, nom 
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*пятидесяти] ::
+
+
+{AnyWord%TERM@+}  ->  {AnyWord%TERM@}[*пятидесяти] ::
+
+
+{Word%TERM}  ->  Word[*сорок] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*сорок] ::
+
+
+{AnyWord%TERM}  ->  AnyWord[*сорок] ::
+
+
+time_0  ->  {Word%TERM@+}[*пятидесяти]  Word[сорок] ::
+>> FAILED:
+        kwset(1)=[minute ] 
+
+
+{Word%TERM}  ->  Word[*сорок] ::
+
+
+time_0  ->  {AnyWord%TERM@+}[*пятидесяти]  Word[сорок] ::
+>> FAILED:
+        kwset(1)=[hour ] 
+
+
+{Word%TERM@}  ->  {Word%TERM}[*сорок] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+time_2  ->  {Word%TERM}[*сорок] ::
+>> FAILED:
+        kwset(0)=[time_Day1 ] wfm[0]=/^[п][о][л].*$/
+
+
+time_0  ->  {AnyWord%TERM}[*сорок] ::
+>> FAILED:
+        wfm[0]=/^[0-2][0-9]:[0-5][0-9]$/
+        kwset(0)~=[дата ] wfm[0]=/^[0-2][0-9]$/
+
+
+{Word%TERM@}  ->  {Word%TERM}[*сорок] ::
+    Ok: kwset(0)~=[дата ] GU(0)=&[NUM]GU(0)=&[ANUM]
+
+
+{Word%TERM@+}  ->  {Word%TERM@}[*сорок] ::
+
+
+{Word%TERM@+}  ->  {Word%TERM@+}[*пятидесяти]  {Word%TERM@}[сорок] ::
+
+
+********************************** finished gram_time.cxx **********************************
+

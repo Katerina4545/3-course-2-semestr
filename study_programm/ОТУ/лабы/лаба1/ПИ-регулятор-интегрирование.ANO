@@ -1,0 +1,104 @@
+********************************************************************************
+***                   Micro-Cap 9.0.7.0 Evaluation Version                   ***
+***                                 Катерина                                 ***
+***                                   nsu                                    ***
+***       Частотный анализ AC Analysis of ПИ-регулятор-интегрирование        ***
+********************************************************************************
+Limits
+======
+Frequency Range  100,0.01
+Number of Points 1001
+Temperature      Linear 27
+Maximum Change % 5
+Noise Input      NONE
+Noise Output     2
+Run Options      Normal
+State Variables  Zero
+Frequency Step   Log
+Operating Point  On
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:               V2   
+Using model:       GENERAL   
+A                   1.000 (*)
+DC                  0.000 (*)
+F                10.000MEG   
+PH                  0.000 (*)
+RP                  0.000 (*)
+RS                  1.000m(*)
+TAU                 0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   2             0.000   3             0.000  
+4             0.000   5             0.000   6             0.000  
+7             0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:                RS_V2            X6.R1
+DC Power Terms:
+PD                      0.000            0.000 
+
+DC Pin Currents:
+Ir                      0.000            0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                   V2
+Using model:           GENERAL
+DC Power Terms:
+PG                      0.000 
+
+DC Pin Currents:
+ISource                 0.000 
+
+
+
+Operating point for devices of type Dependent Source
+====================================================
+Instance:               X3.E1
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+Operating point for devices of type Function Source
+===================================================
+Instance:               X4.E1            X6.E2
+DC Power Terms:
+PG                     0.000            0.000 
+
+DC Pin Currents:
+ISource                0.000            0.000 
+
+
+
+Operating point for devices of type Laplace Source
+==================================================
+Instance:               X1.E2            X5.E2            X7.E2
+DC Power Terms:
+PG                     0.000            0.000            0.000 
+
+DC Pin Currents:
+ISource                0.000            0.000            0.000 
+
+

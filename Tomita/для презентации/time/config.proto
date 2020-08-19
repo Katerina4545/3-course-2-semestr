@@ -1,0 +1,23 @@
+﻿encoding "UTF-8";
+TTextMinerConfig {
+	Dictionary = "dic.gzt";
+
+	Input = {File = "input.txt"}
+
+	Output = {File = "output.txt"
+				Format = text}
+
+	Articles = [			
+		{ Name = "дата"}
+		{ Name = "время"}
+	]
+	
+	Facts = [
+		{Name = "Date"}
+		{Name = "Time"}
+	]
+	
+	PrettyOutput = "pretty.html";
+	PrintTree = "tree.txt";
+	PrintRules = "rules.txt";  
+}

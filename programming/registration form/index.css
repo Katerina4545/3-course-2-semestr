@@ -1,0 +1,97 @@
+.myBlock {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+    height: 450px;
+    width: 400px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    background: #F7F5EF;
+
+}
+
+.field {
+    height: 50px;
+    width: 300px;
+
+    margin: 10px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #F7F5EF;
+}
+
+.field:hover {
+    box-shadow: 0px 0px 5px 1px #a6a7a5;
+}
+
+.button {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.email:invalid:not(:placeholder-shown) {
+    box-shadow:0px 0px 5px 1px #d37f6a;
+}
+.email:valid:not(:placeholder-shown) {
+    box-shadow:0px 0px 5px 1px #7cb167;
+}
+
+.error {
+    display: none;
+    position: absolute;
+    left: 250px;
+    top: 50px;
+
+    padding: 10px;
+
+    height: 70px;
+    width: 150px;
+
+    background: #d37f6a;
+    border-radius: 10px;
+    
+    color: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.password-error {
+    display: none;
+    position: absolute;
+    left: 150px;
+    top: 50px;
+
+    padding: 10px;
+
+    height: 110px;
+    width: 250px;
+
+    background: #d37f6a;
+    border-radius: 10px;
+    
+    color: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+.ready {
+    padding-top: 40px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+
+    height: 70px;
+    width: 300px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    background: #F7F5EF;
+
+    color: gray;
+    font-family: sans-serif;
+    font-size: 18px;
+}

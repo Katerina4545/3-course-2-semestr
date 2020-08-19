@@ -1,0 +1,38 @@
+.block{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 386px;
+    height: 900px;
+    background: rgba(53, 69, 57, 0.9);
+    
+  
+}
+
+.logo{
+    margin-top: 60px;
+
+    color: rgba(255, 255, 255, 0.801);
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;    
+}
+
+.button{
+    width: 290px;
+    height: 70px;
+    margin: 30px;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    outline: none;
+
+    background: rgba(101, 204, 207, 0.664);
+    color: rgba(255, 255, 255, 0.76);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+}
+
+.button:hover{
+    box-shadow: 0 0 4px 3px #abadad;
+}

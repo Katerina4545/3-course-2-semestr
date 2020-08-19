@@ -1,0 +1,70 @@
+:-dynamic db_yes/1, db_no/1.
+
+/*объекты*/
+rule(1,"Ель",[1,7,11,13]).
+rule(2,"Сосна",[1,11,13]).
+rule(3,"Кедр",[1,7,12,13]).
+rule(4,"Береза",[2,6,11]).
+rule(5,"Ива",[3,9]).
+rule(6,"Дуб",[4,14]).
+rule(7,"Топол",[2,11]).
+rule(8,"Клен",[16]).
+rule(9,"Каштан",[15]).
+rule(10,"Липа",[2]).
+
+/*свойства*/
+property(1,"игловидные листья").
+property(2,"овальные зубчатые листья").
+property(3,"вытянутые гладкие листья").
+property(4,"вытянутые волнистые листья").
+property(6,"белый ствол с черными полосами").
+property(7,"треугольную крону").
+property(9,"приплюснутую крону").
+property(11,"умеренно пышную крону").
+property(12,"не очень пышную крону").
+property(13,"побеги в виде шишек").
+property(14,"побеги в виде желудей").
+property(15,"побеги в виде каштанов").
+property(16,"волнистые зубчатые листья").
+
+/*правила*/
+tree(X):-rule(_,X,Property), check_property(Property).
+tree(_):-write("Такого дерева я не знааю :("),fail.
+check_property([N|Property]):-property(N,A),yes(A),check_property(Property).
+check_property([]).
+yes(X):-db_yes(X),!.
+yes(X):-not(no(X)),!,check_if(X).
+no(X):-db_no(X),!.
+check_if(X):-write("Дерево имеет "),write(X),writeln("?"),
+    read(Reply),remember(Reply,X).
+remember(да, X):-asserta(db_yes(X)).
+remember(нет, X):-asserta(db_no(X)),fail.
+
+/*выдать список всех объектов*/
+print_obj():- forall(rule(_,Name,_),writeln(Name)).
+
+/*печать списка*/
+print_list([ ]).
+print_list([ Head | Tail ]) :- property(Head,Z),writeln(Z), nl, print_list(Tail).
+
+/*распечатай объяснение решения*/
+describe_decision(X) :- rule(_, X, Properties), writeln("Решение принято на основе вашего выбора: "), print_list(Properties).
+
+/*распечатай свойства объекта*/
+describe_tree(X) :- rule(_, X, Properties), print_list(Properties).
+
+get_description(y):-print_obj(),nl, writeln("Напишите название дерева из списка: "),read(X), rule(_, X, _),describe_tree(X).
+get_description(n):- nl, writeln("До свидания."),true.
+get_description(_):- writeln("Такого дерева я не знаю.").
+
+/*узнать описание объекта*/
+tree_description():- writeln("Хотите узнать описание какого-то дерева?(y/n)"),read(Answer), get_description(Answer),!.
+
+game:-writeln("Вот какие деревья я знаю:"), print_obj(),writeln("Ответьте на следующие вопросы:"),
+    retractall(db_yes(_)),retractall(db_no(_)),
+    tree(X),write("Ваше дерево называется - "),
+    writeln(X), describe_decision(X).
+
+
+
+

@@ -1,0 +1,85 @@
+﻿encoding "UTF-8";
+import "kwtypes.proto";
+
+dates "январь"
+{
+	key = "январь"
+	key = "янв"
+	lemma = "январь"
+}
+
+dates "февраль"
+{
+	key = "февраль"
+	key = "фев"
+	lemma = "февраль"
+}
+
+dates "март"
+{
+	key = "март"
+	key = "мрт"
+	lemma = "март"
+}
+
+dates "апрель"
+{
+	key = "апрель"
+	key = "апр"
+	lemma = "апрель"
+}
+
+dates "май"
+{
+	key = "май"
+}
+
+dates "июнь"
+{
+	key = "июнь"
+	key = "июн"
+	lemma = "июнь"
+}
+
+dates "июль"
+{
+	key = "июль"
+	key = "июл"
+	lemma = "июль"
+}
+
+dates "август"
+{
+	key = "август"
+	key = "авг"
+	lemma = "август"
+}
+
+dates "сентябрь"
+{
+	key = "сентябрь"
+	key = "сент"
+	key = "сен"
+	lemma = "сентябрь"
+}
+
+dates "октябрь"
+{
+	key = "октябрь"
+	key = "окт"
+	lemma = "октябрь"
+}
+
+dates "ноябрь"
+{
+	key = "ноябрь"
+	key = "ноя"
+	lemma = "ноябрь"
+}
+
+dates "декабрь"
+{
+	key = "декабрь"
+	key = "дек"
+	lemma = "декабрь"
+}

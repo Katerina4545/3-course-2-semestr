@@ -1,0 +1,15 @@
+country(россия, москва).
+country(греция, афины).
+country(германия, берлин).
+country(египет, каир).
+country(израиль, иерусалим).
+country(испания, мадрид).
+country(чили, сантьяго).
+country(швеция, стокгольм).
+country(чехия, прага).
+country(хорватия, загреб).
+country(_, _) :- writeln("Такой страны/города в базе нет."), fail.
+
+print_capital :- write("Введите название страны:"),read(Country), country(Country, Capital), writeln(Capital), true.
+
+print_country :- write("Введите название города:"),read(Country), country(Country, Capital), writeln(Capital), true.

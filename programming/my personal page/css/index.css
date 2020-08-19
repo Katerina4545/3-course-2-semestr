@@ -1,0 +1,102 @@
+body{
+    background: url("../img/background.jpg") no-repeat;
+    background-size: cover;
+    overflow: visible;
+   
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu{
+    position: absolute;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    margin-left: 35px;
+    cursor: pointer; 
+}
+
+.contacts{
+    position: absolute;
+    float: right;
+    right: 170px;
+    
+}
+
+.contact{
+    width: 40px;
+    height: 40px;
+    margin: 20px; 
+    cursor: pointer;   
+}
+
+.avatar{
+position: relative;
+width: 268px;
+height: 268px;
+top: 80px;
+
+background: url("../img/avatar.png") no-repeat;
+border: 9px solid rgba(255, 255, 255, 0.43);
+border-radius: 50%;
+}
+
+.text{
+    position: relative;
+    width: 809px;
+    height: 283px;    
+    top: 120px;
+
+    border-radius: 45px;
+    background: rgba(53, 69, 57, 0.76);
+    color: rgba(255, 255, 255, 0.81);
+
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+
+   
+}
+
+#text1{
+    margin: 15px;
+    font-family: 'Bad Script', cursive;
+    font-size: 24px;
+}
+
+#text2{
+    margin: 15px;
+    font-family: 'Bad Script', cursive;
+    font-size: 24px;
+}
+
+.website{
+    position: relative;
+    text-align: center;
+    margin: 20px;    
+    top: 220px;
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    cursor: pointer; 
+}
+
+.website a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.81);
+}
+
+::-webkit-scrollbar{
+    width: 5px;  
+    background: rgba(0, 0, 0, 0.76);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+    border-radius: 4px;
+    
+}
